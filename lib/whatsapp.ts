@@ -59,5 +59,11 @@ export function whatsappUrl(producto?: string) {
 
 export function openWhatsApp(producto?: string) {
   if (typeof window === "undefined") return;
-  window.open(whatsappUrl(producto), "_blank", "noopener,noreferrer");
+  const a = document.createElement("a");
+  a.href = whatsappUrl(producto);
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
 }

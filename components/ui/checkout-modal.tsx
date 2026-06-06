@@ -20,7 +20,14 @@ export function CheckoutModal({ onClose }: Props) {
     if (!name.trim() || !address.trim()) return;
     const msg = buildOrderMessage(state.items, { name, address }, totalPrice, wantsDelivery);
     const url = buildWhatsappUrl(msg);
-    window.open(url, "_blank", "noopener,noreferrer");
+    // Usar <a> dinámico — más compatible con móviles y browsers que bloquean window.open
+    const a = document.createElement("a");
+    a.href = url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
     clear();
     closeCart();
     onClose();
