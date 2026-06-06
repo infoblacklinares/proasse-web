@@ -16,8 +16,7 @@ export function buildOrderMessage(
   totalPrice: number,
   wantsDelivery: boolean
 ): string {
-  const delivery = wantsDelivery && isDeliveryTime();
-  const deliveryFee = delivery ? DELIVERY_FEE : 0;
+  const deliveryFee = wantsDelivery ? DELIVERY_FEE : 0;
   const grandTotal = totalPrice + deliveryFee;
 
   const lines = items
@@ -29,8 +28,8 @@ export function buildOrderMessage(
     )
     .join("\n");
 
-  const deliveryLine = delivery
-    ? `\n🚚 *Delivery* (+${formatPrice(DELIVERY_FEE)} · después de las 19:00)`
+  const deliveryLine = wantsDelivery
+    ? `\n🚚 *Delivery* (+${formatPrice(DELIVERY_FEE)})`
     : "\n🏪 *Retiro en tienda*";
 
   return (
