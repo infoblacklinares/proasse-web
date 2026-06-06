@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useCart } from "@/lib/cart-context";
 import { buildOrderMessage, buildWhatsappUrl, isDeliveryTime, DELIVERY_FEE } from "@/lib/whatsapp";
 import { formatPrice } from "@/lib/data";
@@ -12,25 +12,32 @@ export function CheckoutModal({ onClose }: Props) {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [wantsDelivery, setWantsDelivery] = useState(false);
+
   const deliveryAvailable = isDeliveryTime();
   const deliveryFee = wantsDelivery && deliveryAvailable ? DELIVERY_FEE : 0;
   const grandTotal = totalPrice + deliveryFee;
 
-  function handleSend() {
-    if (!name.trim() || !address.trim()) return;
-    const msg = buildOrderMessage(state.items, { name, address }, totalPrice, wantsDelivery);
-    const url = buildWhatsappUrl(msg);
-    // Usar <a> dinámico — más compatible con móviles y browsers que bloquean window.open
-    const a = document.createElement("a");
-    a.href = url;
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    clear();
-    closeCart();
-    onClose();
+  const ready = name.trim().length > 0 && address.trim().length > 0;
+
+  // URL se recalcula en tiempo real mientras el usuario escribe
+  const waUrl = useMemo(() => {
+    if (!ready) return "#";
+    const msg = buildOrderMessage(
+      state.items,
+      { name: name.trim(), address: address.trim() },
+      totalPrice,
+      wantsDelivery
+    );
+    return buildWhatsappUrl(msg);
+  }, [name, address, wantsDelivery, state.items, totalPrice, ready]);
+
+  function handleSent() {
+    // Se llama después del click en el enlace
+    setTimeout(() => {
+      clear();
+      closeCart();
+      onClose();
+    }, 300);
   }
 
   return (
@@ -75,9 +82,7 @@ export function CheckoutModal({ onClose }: Props) {
           <div className={`rounded-2xl border-2 p-4 transition-colors ${wantsDelivery ? "border-accent bg-accent/5" : "border-line bg-bg"}`}>
             <div className="flex items-center justify-between gap-3">
               <div>
-                <p className="font-bold text-ink text-base">
-                  🚚 Quiero delivery
-                </p>
+                <p className="font-bold text-ink text-base">🚚 Quiero delivery</p>
                 <p className="text-sm text-ink-soft mt-0.5">
                   {deliveryAvailable
                     ? `Disponible ahora · +${formatPrice(DELIVERY_FEE)}`
@@ -90,9 +95,7 @@ export function CheckoutModal({ onClose }: Props) {
                 role="switch"
                 aria-checked={wantsDelivery}
               >
-                <span
-                  className={`absolute top-1 w-6 h-6 bg-paper rounded-full shadow transition-all ${wantsDelivery ? "left-7" : "left-1"}`}
-                />
+                <span className={`absolute top-1 w-6 h-6 bg-paper rounded-full shadow transition-all ${wantsDelivery ? "left-7" : "left-1"}`} />
               </button>
             </div>
           </div>
@@ -112,17 +115,27 @@ export function CheckoutModal({ onClose }: Props) {
           >
             Volver
           </button>
-          <button
-            onClick={handleSend}
-            disabled={!name.trim() || !address.trim()}
-            className="flex-1 py-4 rounded-2xl bg-accent text-paper font-extrabold text-base hover:bg-accent-deep transition-colors shadow-lg disabled:opacity-40 disabled:cursor-not-allowed"
-          >
-            Enviar 📲
-          </button>
+
+          {/* Botón de envío — es un <a> real para máxima compatibilidad */}
+          {ready ? (
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleSent}
+              className="flex-1 py-4 rounded-2xl bg-accent text-paper font-extrabold text-base hover:bg-accent-deep transition-colors shadow-lg text-center flex items-center justify-center"
+            >
+              Enviar por WhatsApp 📲
+            </a>
+          ) : (
+            <div className="flex-1 py-4 rounded-2xl bg-accent/40 text-paper font-extrabold text-base text-center flex items-center justify-center cursor-not-allowed">
+              {!name.trim() ? "Escribe tu nombre" : "Escribe tu dirección"}
+            </div>
+          )}
         </div>
 
         <p className="text-xs text-center text-ink-soft">
-          Te redirigiremos a WhatsApp. Proasse confirmará el stock antes de aceptar tu pedido.
+          Te abriremos WhatsApp con el pedido listo. Proasse confirmará el stock antes de aceptar.
         </p>
       </div>
     </div>
