@@ -21,7 +21,7 @@ export function Catalog() {
             Catálogo
           </h2>
           <p className="text-ink-soft mt-1 text-lg">
-            Selecciona los productos y te lo llevamos a casa
+            Haz tu pedido en línea o pasa a buscarlo a la tienda
           </p>
         </div>
 

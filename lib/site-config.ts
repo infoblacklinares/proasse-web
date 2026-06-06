@@ -26,7 +26,7 @@ export const siteConfig = {
 
   contact: {
     // WhatsApp: +56 9 56471545
-    whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "56984272557",
+    whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "56956471545",
     email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL ?? ""
   },
 

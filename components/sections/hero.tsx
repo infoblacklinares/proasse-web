@@ -15,8 +15,8 @@ export function Hero() {
             Alimentos para<br />tu mascota 🐾
           </h1>
           <p className="text-base opacity-90 mb-5 max-w-xs">
-            Agrega al carrito y recibe tu pedido. Delivery disponible después de las{" "}
-            <strong>19:00 hrs</strong> por solo <strong>$600</strong>.
+            Compra en tienda o haz tu pedido en línea. Si necesitas delivery,
+            lo tenemos disponible después de las <strong>19:00 hrs</strong> por solo <strong>$600</strong>.
           </p>
           <a
             href="#catalogo"
@@ -32,9 +32,9 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Delivery strip */}
+      {/* Strip inferior */}
       <div className="bg-accent-deep text-paper/90 text-center py-2 text-sm font-medium">
-        🚚 Delivery después de las 19:00 hrs · Solo +$600 · Consulta por{" "}
+        🏪 Visítanos en tienda · 🚚 Delivery después de las 19:00 hrs (+$600) · Consultas por{" "}
         <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="underline font-bold">
           WhatsApp
         </a>

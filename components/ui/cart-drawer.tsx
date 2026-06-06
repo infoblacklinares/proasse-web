@@ -42,7 +42,7 @@ export function CartDrawer() {
                 Tu pedido está vacío
               </p>
               <p className="text-ink-soft text-sm">
-                Agrega productos desde el catálogo
+                Agrega productos del catálogo para hacer tu pedido
               </p>
               <button
                 onClick={closeCart}
