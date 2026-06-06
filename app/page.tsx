@@ -1,43 +1,19 @@
-"use client";
-import { useReveal } from "@/components/hooks/use-reveal";
-import { ScrollProgress } from "@/components/ui/scroll-progress";
-import { WAFloat } from "@/components/ui/wa-float";
 import { Nav } from "@/components/sections/nav";
 import { Hero } from "@/components/sections/hero";
-import { Marquee } from "@/components/sections/marquee";
-import { Categories } from "@/components/sections/categories";
-import { Banners } from "@/components/sections/banners";
-import { Products } from "@/components/sections/products";
-import { Brands } from "@/components/sections/brands";
-import { Showcase } from "@/components/sections/showcase";
-import { Process } from "@/components/sections/process";
-import { Gallery } from "@/components/sections/gallery";
-import { Location } from "@/components/sections/location";
-import { CTAFinal } from "@/components/sections/cta-final";
+import { Catalog } from "@/components/sections/catalog";
 import { Footer } from "@/components/sections/footer";
+import { CartDrawer } from "@/components/ui/cart-drawer";
 
-export default function HomePage() {
-  useReveal();
-
+export default function Home() {
   return (
     <>
-      <ScrollProgress />
       <Nav />
-      <main>
+      <main className="min-h-screen bg-bg">
         <Hero />
-        <Marquee />
-        <Categories />
-        <Banners />
-        <Products />
-        <Brands />
-        <Showcase />
-        <Process />
-        <Gallery />
-        <Location />
-        <CTAFinal />
+        <Catalog />
       </main>
       <Footer />
-      <WAFloat />
+      <CartDrawer />
     </>
   );
 }

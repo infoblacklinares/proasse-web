@@ -25,12 +25,12 @@
   }
 
   body {
-    @apply bg-bg text-ink;
+    @apply bg-bg text-ink font-sans;
     line-height: 1.55;
+    font-size: 18px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
-    font-feature-settings: "ss01";
   }
 
   body::before {
@@ -148,6 +148,15 @@
   .reveal.in {
     @apply opacity-100 translate-y-0;
   }
+}
+
+/* Scrollbar hide para filtros horizontales */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 .section-padding {

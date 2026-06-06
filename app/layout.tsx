@@ -1,27 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Bricolage_Grotesque, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import { siteConfig } from "@/lib/site-config";
+import { CartProvider } from "@/lib/cart-context";
 import "./globals.css";
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  variable: "--font-fraunces",
-  display: "swap",
-  axes: ["opsz", "SOFT", "WONK"]
-});
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   variable: "--font-bricolage",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700"]
-});
-
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains",
-  display: "swap",
-  weight: ["400", "500"]
+  weight: ["400", "500", "600", "700", "800"]
 });
 
 export const metadata: Metadata = {
@@ -34,14 +21,9 @@ export const metadata: Metadata = {
   keywords: [
     "alimentos para mascotas linares",
     "comida para perros linares",
-    "comida para gatos linares",
     "tienda mascotas linares",
     "proasse linares",
-    "sabrokan linares",
-    "montañes linares",
-    "champion dog linares",
-    "delivery alimentos mascotas linares",
-    "pet food linares chile"
+    "delivery alimentos mascotas linares"
   ],
   openGraph: {
     type: "website",
@@ -56,7 +38,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#F4FAF4",
+  themeColor: "#2D8B3C",
   width: "device-width",
   initialScale: 1
 };
@@ -90,17 +72,16 @@ export default function RootLayout({
   children
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="es-CL"
-      className={`${fraunces.variable} ${bricolage.variable} ${jetbrains.variable}`}
-    >
+    <html lang="es-CL" className={bricolage.variable}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <CartProvider>{children}</CartProvider>
+      </body>
     </html>
   );
 }

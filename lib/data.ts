@@ -5,205 +5,136 @@
 export type Category = {
   slug: string;
   title: string;
-  badge: string;
-  image: string;
   emoji: string;
 };
 
 export type Product = {
   id: string;
-  slug: string;
   name: string;
+  brand: string;
   category: string;
+  weight: string;
+  price: number;
   image: string;
-  price?: string;
-  bgPosition?: string;
   tags: Array<"oferta" | "nuevo" | "premium" | "popular" | "destacado">;
-  whatsappProduct: string;
-};
-
-export type Brand = {
-  slug: string;
-  name: string;
-  species: string;
   description: string;
-  color: string;
-};
-
-export type Step = {
-  num: string;
-  title: string;
-  description: string;
-};
-
-export type GalleryItem = {
-  id: string;
-  category: string;
-  caption: string;
-  image: string;
-  size: "gx-1" | "gx-2" | "gx-3" | "gx-4" | "gx-5";
 };
 
 // ===== CATEGORÍAS =====
 export const categories: Category[] = [
-  {
-    slug: "perros",
-    title: "Perros",
-    badge: "Amplio stock",
-    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80",
-    emoji: "🐕"
-  },
-  {
-    slug: "gatos",
-    title: "Gatos",
-    badge: "Nutrición premium",
-    image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&q=80",
-    emoji: "🐈"
-  },
-  {
-    slug: "aves-y-otros",
-    title: "Aves y otros",
-    badge: "Especialidad",
-    image: "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=600&q=80",
-    emoji: "🦜"
-  }
+  { slug: "todos",   title: "Todos",  emoji: "🛍️" },
+  { slug: "perros",  title: "Perros", emoji: "🐕" },
+  { slug: "gatos",   title: "Gatos",  emoji: "🐈" },
+  { slug: "aves",    title: "Aves",   emoji: "🦜" },
 ];
 
 // ===== PRODUCTOS =====
 export const products: Product[] = [
   {
     id: "p-sabrokan",
-    slug: "sabrokan-adulto",
     name: "Sabrokan Adulto",
-    category: "PERRO · ADULTO",
-    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80",
-    price: "$27.990",
-    tags: ["oferta"],
-    whatsappProduct: "Sabrokan Perro Adulto"
+    brand: "Sabrokan",
+    category: "perros",
+    weight: "22 kg",
+    price: 27990,
+    image: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400&q=80",
+    tags: ["popular"],
+    description: "Alimento completo para perros adultos. Fórmula balanceada.",
   },
   {
     id: "p-montanes",
-    slug: "montanes-adulto",
-    name: "Montañés 20kg",
-    category: "PERRO · ADULTO",
-    image: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80",
-    price: "$26.990",
+    name: "Montañés Adulto",
+    brand: "Montañés",
+    category: "perros",
+    weight: "20 kg",
+    price: 26990,
+    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80",
+    tags: ["oferta"],
+    description: "Carne, pollo y cereales. Alta digestibilidad.",
+  },
+  {
+    id: "p-champion",
+    name: "Champion Dog",
+    brand: "Champion",
+    category: "perros",
+    weight: "18 kg",
+    price: 27990,
+    image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&q=80",
+    tags: ["destacado"],
+    description: "Nutrición completa para perros adultos.",
+  },
+  {
+    id: "p-nutrecan",
+    name: "Nutrecan Adulto",
+    brand: "Nutrecan",
+    category: "perros",
+    weight: "25 kg",
+    price: 31990,
+    image: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&q=80",
+    tags: ["premium"],
+    description: "Fórmula premium con proteína animal de alta calidad.",
+  },
+  {
+    id: "p-pedigree",
+    name: "Pedigree Adulto",
+    brand: "Pedigree",
+    category: "perros",
+    weight: "20 kg",
+    price: 33990,
+    image: "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=400&q=80",
     tags: ["popular"],
-    whatsappProduct: "Montañés 20kg"
+    description: "Con vitaminas, minerales y omega 6.",
   },
   {
-    id: "p-champion-dog",
-    slug: "champion-dog",
-    name: "Champion Dog",
-    category: "PERRO · 18KG",
-    image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80",
-    price: "$27.990",
-    tags: ["oferta", "destacado"],
-    whatsappProduct: "Champion Dog"
+    id: "p-proplan-perro",
+    name: "Pro Plan Adulto",
+    brand: "Pro Plan",
+    category: "perros",
+    weight: "15 kg",
+    price: 47990,
+    image: "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?w=400&q=80",
+    tags: ["premium"],
+    description: "Nutrición avanzada con ingredientes naturales.",
   },
   {
-    id: "p-diatomita",
-    slug: "diatomita-lidy",
-    name: "Diatomita Lidy",
-    category: "ANTIPARASITARIO · BIO-ORGÁNICO",
-    image: "https://images.unsplash.com/photo-1611003229108-50b0e4c60e63?w=600&q=80",
-    price: "Consultar",
+    id: "p-whiskas",
+    name: "Whiskas Adulto",
+    brand: "Whiskas",
+    category: "gatos",
+    weight: "10 kg",
+    price: 22990,
+    image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&q=80",
+    tags: ["popular"],
+    description: "Sabor a pescado y carne. Para gatos adultos.",
+  },
+  {
+    id: "p-proplan-gato",
+    name: "Pro Plan Gato",
+    brand: "Pro Plan",
+    category: "gatos",
+    weight: "7.5 kg",
+    price: 38990,
+    image: "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=400&q=80",
+    tags: ["premium"],
+    description: "Fórmula con salmón. Pelo brillante y sano.",
+  },
+  {
+    id: "p-aves",
+    name: "Mezcla para Aves",
+    brand: "Proasse",
+    category: "aves",
+    weight: "5 kg",
+    price: 8990,
+    image: "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=400&q=80",
     tags: ["nuevo"],
-    whatsappProduct: "Diatomita Antiparasitaria Lidy"
-  }
+    description: "Mezcla de semillas para aves de compañía.",
+  },
 ];
 
-// ===== MARCAS / LÍNEAS =====
-export const brands: Brand[] = [
-  {
-    slug: "sabrokan",
-    name: "Sabrokan",
-    species: "Para perros",
-    description:
-      "Alimento completo para perros adultos. Fórmula balanceada con proteínas de alta calidad.",
-    color: "brand-sabrokan"
-  },
-  {
-    slug: "montanes",
-    name: "Montañés",
-    species: "Para perros",
-    description:
-      "Carne, pollo y cereales. Ideal para razas medianas y grandes. Alta digestibilidad.",
-    color: "brand-montanes"
-  },
-  {
-    slug: "champion",
-    name: "Champion Dog",
-    species: "Para perros",
-    description:
-      "Nutrición premium para perros adultos. Formato 18kg con entrega inmediata.",
-    color: "brand-champion"
-  }
-];
-
-// ===== PROCESO / POR QUÉ ELEGIRNOS =====
-export const steps: Step[] = [
-  {
-    num: "01",
-    title: "Atención personalizada",
-    description:
-      "Te asesoramos según la especie, raza, edad y condición de tu mascota. Cada animal es diferente."
-  },
-  {
-    num: "02",
-    title: "Stock siempre disponible",
-    description:
-      "Mantenemos amplio stock de las principales marcas. Sin esperas, sin quiebres."
-  },
-  {
-    num: "03",
-    title: "Delivery en Linares",
-    description:
-      "Llevamos el alimento hasta tu puerta. Consulta disponibilidad por WhatsApp."
-  },
-  {
-    num: "04",
-    title: "Precios convenientes",
-    description:
-      "Compramos en volumen para ofrecerte los mejores precios de la zona. Siempre."
-  }
-];
-
-// ===== GALERÍA =====
-export const gallery: GalleryItem[] = [
-  {
-    id: "g1",
-    category: "Proasse · Linares",
-    caption: "Amplio stock de alimentos para perros",
-    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&q=80",
-    size: "gx-1"
-  },
-  {
-    id: "g2",
-    category: "Gatos",
-    caption: "Nutrición premium para felinos",
-    image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&q=80",
-    size: "gx-2"
-  },
-  {
-    id: "g3",
-    category: "Aves",
-    caption: "Alimento especializado para aves",
-    image: "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=600&q=80",
-    size: "gx-3"
-  },
-  {
-    id: "g4",
-    category: "Perros",
-    caption: "Las mejores marcas del mercado",
-    image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80",
-    size: "gx-4"
-  },
-  {
-    id: "g5",
-    category: "Delivery",
-    caption: "Llevamos el alimento hasta tu hogar",
-    image: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80",
-    size: "gx-5"
-  }
-];
+export function formatPrice(price: number): string {
+  return new Intl.NumberFormat("es-CL", {
+    style: "currency",
+    currency: "CLP",
+    minimumFractionDigits: 0,
+  }).format(price);
+}

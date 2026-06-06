@@ -31,9 +31,7 @@ const config: Config = {
         }
       },
       fontFamily: {
-        serif: ["var(--font-fraunces)", "Times New Roman", "serif"],
         sans: ["var(--font-bricolage)", "system-ui", "sans-serif"],
-        mono: ["var(--font-jetbrains)", "monospace"]
       },
       borderRadius: {
         DEFAULT: "16px",

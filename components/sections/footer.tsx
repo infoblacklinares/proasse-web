@@ -1,135 +1,54 @@
-"use client";
 import { siteConfig } from "@/lib/site-config";
-import { openWhatsApp } from "@/lib/whatsapp";
-
-const MAPS_DIR = `https://maps.google.com/?q=${encodeURIComponent(
-  siteConfig.location.mapsQuery
-)}`;
+import { whatsappUrl } from "@/lib/whatsapp";
 
 export function Footer() {
   return (
-    <footer className="py-20 bg-bg">
-      <div className="wrap">
-        <div className="grid lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-12 mb-16">
+    <footer className="bg-ink text-paper/80 py-10 mt-8">
+      <div className="max-w-site mx-auto px-[var(--gutter)] space-y-6">
+        {/* Info */}
+        <div className="grid sm:grid-cols-3 gap-6 text-base">
           <div>
-            <a href="/" className="inline-flex items-center gap-2.5 mb-5">
-              <span className="w-[30px] h-[30px] bg-accent text-paper grid place-items-center rounded-full font-serif italic text-[0.95rem]">
-                P
-              </span>
-              <span className="font-serif text-[1.4rem] font-medium tracking-tighter">
-                Proasse
-              </span>
-            </a>
-            <p className="text-ink-soft text-[0.95rem] max-w-[320px] mb-6">
-              {siteConfig.fullName}. Alimentos para perros, gatos y aves en{" "}
-              {siteConfig.location.city}. Delivery disponible.
-            </p>
-            <span className="mono-label text-accent">
-              {siteConfig.location.city.toUpperCase()} · MAULE, CL
-            </span>
+            <p className="font-extrabold text-paper text-lg mb-2">📍 Dónde estamos</p>
+            <p>{siteConfig.location.address}</p>
+            <p>{siteConfig.location.address2}</p>
+            <p>{siteConfig.location.city}</p>
           </div>
-
           <div>
-            <h5 className="mono-label text-accent mb-5">Catálogo</h5>
-            <a href="#productos" className="block text-[0.95rem] mb-2.5 hover:text-accent transition-colors">
-              Alimentos para perros
-            </a>
-            <a href="#productos" className="block text-[0.95rem] mb-2.5 hover:text-accent transition-colors">
-              Alimentos para gatos
-            </a>
-            <a href="#productos" className="block text-[0.95rem] mb-2.5 hover:text-accent transition-colors">
-              Alimentos para aves
-            </a>
-            <a href="#productos" className="block text-[0.95rem] mb-2.5 hover:text-accent transition-colors">
-              Antiparasitarios
-            </a>
-          </div>
-
-          <div>
-            <h5 className="mono-label text-accent mb-5">Locales</h5>
-            <a
-              href={MAPS_DIR}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-[0.95rem] mb-2.5 leading-[1.6] hover:text-accent transition-colors"
-            >
-              {siteConfig.location.address}
-              <br />
-              Entre Brasil y Yumbel
-            </a>
-            <a
-              href={MAPS_DIR}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-[0.95rem] mb-2.5 leading-[1.6] hover:text-accent transition-colors"
-            >
-              {siteConfig.location.address2}
-              <br />
-              {siteConfig.location.city}
-            </a>
-            <p className="text-[0.95rem] leading-[1.6] mt-3">
-              {siteConfig.hours.days}
-              <br />
-              {siteConfig.hours.range}
+            <p className="font-extrabold text-paper text-lg mb-2">🕘 Horario</p>
+            <p>{siteConfig.hours.days}</p>
+            <p>{siteConfig.hours.range}</p>
+            <p className="mt-2 text-accent-light font-semibold">
+              🚚 Delivery después de las 19:00 · +$600
             </p>
           </div>
-
           <div>
-            <h5 className="mono-label text-accent mb-5">Contacto</h5>
+            <p className="font-extrabold text-paper text-lg mb-2">📲 Contacto</p>
             <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                openWhatsApp();
-              }}
-              className="block text-[0.95rem] mb-2.5 hover:text-accent transition-colors"
+              href={whatsappUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-whatsapp text-white font-bold px-4 py-3 rounded-xl hover:bg-whatsapp-hover transition-colors text-base"
             >
-              WhatsApp →
+              <span>WhatsApp</span>
+              <span>+56 9 5647 1545</span>
             </a>
-            {siteConfig.social.instagram && (
-              <a
-                href={siteConfig.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-[0.95rem] mb-2.5 hover:text-accent transition-colors"
-              >
-                Instagram →
-              </a>
-            )}
-            {siteConfig.social.facebook && (
-              <a
-                href={siteConfig.social.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-[0.95rem] mb-2.5 hover:text-accent transition-colors"
-              >
-                Facebook →
-              </a>
-            )}
-            <a href="#contacto" className="block text-[0.95rem] mb-2.5 hover:text-accent transition-colors">
-              Cómo llegar →
-            </a>
+            <div className="flex gap-3 mt-3">
+              <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-paper transition-colors">Instagram</a>
+              <span>·</span>
+              <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-paper transition-colors">Facebook</a>
+            </div>
           </div>
         </div>
 
-        <div
-          className="font-serif italic font-light text-[clamp(5rem,22vw,22rem)] leading-[0.85] tracking-[-0.05em] text-accent opacity-[0.06] my-10 text-center select-none"
-          style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
-        >
-          Proasse
-        </div>
-
-        <div className="pt-8 border-t border-line flex flex-wrap justify-between gap-4 font-mono text-[0.7rem] tracking-[0.1em] text-ink-soft uppercase">
-          <div>
-            © {new Date().getFullYear()} {siteConfig.fullName} · Todos los
-            derechos reservados
-          </div>
-          <div>
+        {/* Bottom */}
+        <div className="border-t border-paper/10 pt-4 flex flex-col sm:flex-row justify-between gap-2 text-sm text-paper/50">
+          <p>© {new Date().getFullYear()} {siteConfig.fullName}</p>
+          <p>
             Hecho por{" "}
-            <a href={siteConfig.credits.studioUrl} target="_blank" rel="noopener noreferrer" className="text-accent">
+            <a href={siteConfig.credits.studioUrl} className="hover:text-paper transition-colors">
               {siteConfig.credits.studio}
             </a>
-          </div>
+          </p>
         </div>
       </div>
     </footer>
