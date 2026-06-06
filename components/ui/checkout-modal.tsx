@@ -79,26 +79,34 @@ export function CheckoutModal({ onClose }: Props) {
           </div>
 
           {/* Delivery toggle */}
-          <div className={`rounded-2xl border-2 p-4 transition-colors ${wantsDelivery ? "border-accent bg-accent/5" : "border-line bg-bg"}`}>
+          <button
+            type="button"
+            onClick={() => setWantsDelivery(!wantsDelivery)}
+            className={`w-full rounded-2xl border-2 p-4 transition-all text-left ${
+              wantsDelivery
+                ? "border-accent bg-accent/5"
+                : "border-ink-soft/30 bg-bg hover:border-accent/50"
+            }`}
+          >
             <div className="flex items-center justify-between gap-3">
               <div>
                 <p className="font-bold text-ink text-base">🚚 Quiero delivery</p>
                 <p className="text-sm text-ink-soft mt-0.5">
-                  {deliveryAvailable
-                    ? `Disponible ahora · +${formatPrice(DELIVERY_FEE)}`
-                    : `Solo después de las 19:00 hrs · +${formatPrice(DELIVERY_FEE)}`}
+                  +{formatPrice(DELIVERY_FEE)} · Después de las 19:00 hrs
                 </p>
               </div>
-              <button
-                onClick={() => setWantsDelivery(!wantsDelivery)}
-                className={`relative w-14 h-8 rounded-full transition-colors ${wantsDelivery ? "bg-accent" : "bg-line"}`}
-                role="switch"
-                aria-checked={wantsDelivery}
-              >
-                <span className={`absolute top-1 w-6 h-6 bg-paper rounded-full shadow transition-all ${wantsDelivery ? "left-7" : "left-1"}`} />
-              </button>
+              {/* Checkbox visual */}
+              <div className={`w-7 h-7 rounded-lg border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
+                wantsDelivery ? "bg-accent border-accent" : "bg-paper border-ink-soft/40"
+              }`}>
+                {wantsDelivery && (
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M2 7l4 4 6-7" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                )}
+              </div>
             </div>
-          </div>
+          </button>
         </div>
 
         {/* Total */}
