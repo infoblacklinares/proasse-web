@@ -64,33 +64,38 @@ export function ProductCard({ product }: { product: Product }) {
         <h3 className="font-bold text-ink text-base leading-tight">{product.name}</h3>
         <p className="text-sm text-ink-soft">{product.weight}</p>
 
-        {/* Precio + Botón */}
-        <div className="mt-auto pt-3 flex items-center justify-between gap-2">
-          <span className="text-lg font-extrabold text-accent">
-            {formatPrice(product.price)}
-          </span>
+        {/* Precio */}
+        <p className="mt-2 text-lg font-extrabold text-accent">
+          {formatPrice(product.price)}
+        </p>
 
+        {/* Botón agregar o controles de cantidad — siempre en su propia fila */}
+        <div className="mt-2">
           {qty === 0 ? (
             <button
               onClick={handleAdd}
-              className={`w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold transition-all shadow-md
-                ${added ? "bg-accent-deep text-paper scale-90" : "bg-accent text-paper hover:bg-accent-deep active:scale-90"}`}
-              aria-label={`Agregar ${product.name}`}
+              className={`w-full py-2.5 rounded-xl font-bold text-base transition-all
+                ${added
+                  ? "bg-accent-deep text-paper"
+                  : "bg-accent text-paper hover:bg-accent-deep active:scale-95"
+                }`}
             >
-              {added ? "✓" : "+"}
+              {added ? "✓ Agregado" : "+ Agregar"}
             </button>
           ) : (
-            <div className="flex items-center gap-1">
+            <div className="flex items-center justify-between gap-1 bg-bg-2 rounded-xl px-2 py-1">
               <button
-                onClick={() => (qty === 1 ? remove(product.id) : setQty(product.id, qty - 1))}
-                className="w-9 h-9 rounded-full bg-bg-2 text-ink font-bold text-lg flex items-center justify-center hover:bg-line transition-colors"
+                onClick={() => qty === 1 ? remove(product.id) : setQty(product.id, qty - 1)}
+                className="w-9 h-9 rounded-lg bg-paper text-ink font-bold text-xl flex items-center justify-center hover:bg-line transition-colors shadow-sm"
               >
                 −
               </button>
-              <span className="w-6 text-center font-bold text-ink">{qty}</span>
+              <span className="font-extrabold text-ink text-lg min-w-[24px] text-center">
+                {qty}
+              </span>
               <button
                 onClick={() => setQty(product.id, qty + 1)}
-                className="w-9 h-9 rounded-full bg-accent text-paper font-bold text-lg flex items-center justify-center hover:bg-accent-deep transition-colors"
+                className="w-9 h-9 rounded-lg bg-accent text-paper font-bold text-xl flex items-center justify-center hover:bg-accent-deep transition-colors shadow-sm"
               >
                 +
               </button>
