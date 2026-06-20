@@ -1,53 +1,66 @@
 "use client";
 
 import { useState } from "react";
-import { products, categories } from "@/lib/data";
+import { products, categories, subcategoriesPerro, subcategoriesGato } from "@/lib/data";
 import { ProductCard } from "@/components/ui/product-card";
 
 export function Catalog() {
-  const [activeCategory, setActiveCategory] = useState("todos");
+  const [cat, setCat] = useState("todos");
+  const [sub, setSub] = useState("todos");
 
-  const filtered =
-    activeCategory === "todos"
-      ? products
-      : products.filter((p) => p.category === activeCategory);
+  function handleCat(slug: string) {
+    setCat(slug);
+    setSub("todos");
+  }
+
+  const subcats = cat === "perros" ? subcategoriesPerro : cat === "gatos" ? subcategoriesGato : [];
+
+  const filtered = products.filter((p) => {
+    if (cat !== "todos" && p.category !== cat) return false;
+    if (sub !== "todos" && p.subcategory !== sub) return false;
+    return true;
+  });
 
   return (
     <section id="catalogo" className="py-8">
       <div className="max-w-site mx-auto px-[var(--gutter)]">
-        {/* Título */}
         <div className="mb-6">
-          <h2 className="text-3xl font-extrabold text-ink tracking-tight">
-            Catálogo
-          </h2>
+          <h2 className="text-3xl font-extrabold text-ink tracking-tight">Catálogo</h2>
           <p className="text-ink-soft mt-1 text-lg">
             Haz tu pedido en línea o pasa a buscarlo a la tienda
           </p>
         </div>
 
-        {/* Filtros categoría */}
-        <div className="flex gap-2 overflow-x-auto pb-2 mb-6 scrollbar-hide">
-          {categories.map((cat) => (
-            <button
-              key={cat.slug}
-              onClick={() => setActiveCategory(cat.slug)}
+        {/* Filtro principal */}
+        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide mb-3">
+          {categories.map((c) => (
+            <button key={c.slug} onClick={() => handleCat(c.slug)}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-full font-bold text-base whitespace-nowrap transition-all shrink-0
-                ${activeCategory === cat.slug
-                  ? "bg-accent text-paper shadow-md"
-                  : "bg-bg-2 text-ink-soft hover:bg-line"
-                }`}
-            >
-              <span>{cat.emoji}</span>
-              <span>{cat.title}</span>
+                ${cat === c.slug ? "bg-accent text-paper shadow-md" : "bg-bg-2 text-ink-soft hover:bg-line"}`}>
+              <span>{c.emoji}</span><span>{c.title}</span>
             </button>
           ))}
         </div>
 
-        {/* Grid de productos */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-          {filtered.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+        {/* Filtro subcategoría */}
+        {subcats.length > 0 && (
+          <div className="flex gap-2 overflow-x-auto pb-3 scrollbar-hide mb-4">
+            {subcats.map((s) => (
+              <button key={s.slug} onClick={() => setSub(s.slug)}
+                className={`px-3 py-1.5 rounded-full font-semibold text-sm whitespace-nowrap transition-all shrink-0 border
+                  ${sub === s.slug ? "bg-accent-deep text-paper border-accent-deep" : "bg-paper text-ink-soft border-line hover:border-accent"}`}>
+                {s.title}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Contador */}
+        <p className="text-sm text-ink-soft mb-4">{filtered.length} productos</p>
+
+        {/* Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+          {filtered.map((p) => <ProductCard key={p.id} product={p} />)}
         </div>
 
         {filtered.length === 0 && (
