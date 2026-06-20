@@ -13,7 +13,6 @@ export type Product = {
 };
 
 export const categories: Category[] = [
-  { slug: "todos",  title: "Todos",  emoji: "🛍️" },
   { slug: "perros", title: "Perros", emoji: "🐕" },
   { slug: "gatos",  title: "Gatos",  emoji: "🐈" },
 ];

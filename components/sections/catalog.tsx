@@ -5,7 +5,7 @@ import { products, categories, subcategoriesPerro, subcategoriesGato } from "@/l
 import { ProductCard } from "@/components/ui/product-card";
 
 export function Catalog() {
-  const [cat, setCat] = useState("todos");
+  const [cat, setCat] = useState("perros");
   const [sub, setSub] = useState("todos");
 
   function handleCat(slug: string) {
