@@ -36,20 +36,33 @@ export const subcategoriesGato: Subcategory[] = [
 const IMG_PERRO = "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80";
 const IMG_GATO  = "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&q=80";
 
+// Imágenes reales de marcas (via animania.cl / jumbo.cl)
+const IMG_MASTER_DOG   = "https://dojiw2m9tvv09.cloudfront.net/10212/product/M_web-master-dog-carne8162.jpg";
+const IMG_DOG_CHOW     = "https://jumbocl.vtexassets.com/arquivos/ids/384650-900-900?width=600&height=600&aspect=true";
+const IMG_MASTIN       = "https://dojiw2m9tvv09.cloudfront.net/10212/product/M_web-mastin-pollo5230.jpg";
+const IMG_NOMADE       = "https://dojiw2m9tvv09.cloudfront.net/10212/product/M_web-nomade-adulto0800.jpg";
+const IMG_FIT          = "https://dojiw2m9tvv09.cloudfront.net/10212/product/M_web-fit-adulto9888.jpg";
+const IMG_GUARDIAN     = "https://dojiw2m9tvv09.cloudfront.net/10212/product/M_web-guardian-adulto-nueva-18372.jpg";
+const IMG_JOSERA       = "https://dojiw2m9tvv09.cloudfront.net/10212/product/M_joseraregular9961.jpg";
+const IMG_CAT_CHOW     = "https://dojiw2m9tvv09.cloudfront.net/10212/product/M_catchowpescadoni1984.jpg";
+const IMG_MASTER_CAT   = "https://dojiw2m9tvv09.cloudfront.net/10212/product/M_web-master-cat-carne1013.jpg";
+const IMG_SABROCAT     = "https://dojiw2m9tvv09.cloudfront.net/10212/product/M_web-sabrocat1338.jpg";
+const IMG_CHAMPION_CAT = "https://dojiw2m9tvv09.cloudfront.net/10212/product/M_web-champion-cat-adulto-carne18977.jpg";
+
 export const products: Product[] = [
   // ─────────────────────────────────────────────
   // PERROS — MASTER DOG
   // ─────────────────────────────────────────────
-  { id:"p-md-01", name:"Master Dog Adulto Carne",              brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"18 kg", image:IMG_PERRO, tags:["popular"] },
-  { id:"p-md-02", name:"Master Dog Adulto Pollo",              brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-md-03", name:"Master Dog Adulto Raza Pequeña Carne", brand:"Master Dog", category:"perros", subcategory:"raza-pequeña", weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-md-04", name:"Master Dog Senior Carne",              brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-md-05", name:"Master Dog Senior",                    brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-md-06", name:"Master Dog Cachorro",                  brand:"Master Dog", category:"perros", subcategory:"cachorro",     weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-md-07", name:"Master Dog Raza Pequeña",              brand:"Master Dog", category:"perros", subcategory:"raza-pequeña", weight:"8 kg",  image:IMG_PERRO, tags:[] },
-  { id:"p-md-08", name:"Master Dog Cachorro",                  brand:"Master Dog", category:"perros", subcategory:"cachorro",     weight:"8 kg",  image:IMG_PERRO, tags:[] },
-  { id:"p-md-09", name:"Master Dog Senior",                    brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"8 kg",  image:IMG_PERRO, tags:[] },
-  { id:"p-md-10", name:"Master Dog Al Granel",                 brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"A granel",  image:IMG_PERRO, tags:[] },
+  { id:"p-md-01", name:"Master Dog Adulto Carne",              brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"18 kg", image:IMG_MASTER_DOG, tags:["popular"] },
+  { id:"p-md-02", name:"Master Dog Adulto Pollo",              brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"18 kg", image:IMG_MASTER_DOG, tags:[] },
+  { id:"p-md-03", name:"Master Dog Adulto Raza Pequeña Carne", brand:"Master Dog", category:"perros", subcategory:"raza-pequeña", weight:"18 kg", image:IMG_MASTER_DOG, tags:[] },
+  { id:"p-md-04", name:"Master Dog Senior Carne",              brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"18 kg", image:IMG_MASTER_DOG, tags:[] },
+  { id:"p-md-05", name:"Master Dog Senior",                    brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"18 kg", image:IMG_MASTER_DOG, tags:[] },
+  { id:"p-md-06", name:"Master Dog Cachorro",                  brand:"Master Dog", category:"perros", subcategory:"cachorro",     weight:"18 kg", image:IMG_MASTER_DOG, tags:[] },
+  { id:"p-md-07", name:"Master Dog Raza Pequeña",              brand:"Master Dog", category:"perros", subcategory:"raza-pequeña", weight:"8 kg",  image:IMG_MASTER_DOG, tags:[] },
+  { id:"p-md-08", name:"Master Dog Cachorro",                  brand:"Master Dog", category:"perros", subcategory:"cachorro",     weight:"8 kg",  image:IMG_MASTER_DOG, tags:[] },
+  { id:"p-md-09", name:"Master Dog Senior",                    brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"8 kg",  image:IMG_MASTER_DOG, tags:[] },
+  { id:"p-md-10", name:"Master Dog Al Granel",                 brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"A granel",  image:IMG_MASTER_DOG, tags:[] },
 
   // PERROS — CHAMPION DOG
   { id:"p-cd-01", name:"Champion Dog Adulto Carne",            brand:"Champion Dog", category:"perros", subcategory:"adulto",       weight:"18 kg", image:"/products/champion-dog.jpg", tags:["destacado"] },
@@ -64,23 +77,23 @@ export const products: Product[] = [
   { id:"p-sk-04", name:"Sabrokan Cachorro",       brand:"Sabrokan", category:"perros", subcategory:"cachorro", weight:"8 kg",  image:"/products/sabrokan.jpg", tags:[] },
 
   // PERROS — MASTÍN
-  { id:"p-mt-01", name:"Mastín Adulto",            brand:"Mastín", category:"perros", subcategory:"adulto",       weight:"22 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-mt-02", name:"Mastín Senior",            brand:"Mastín", category:"perros", subcategory:"senior",       weight:"20 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-mt-03", name:"Mastín Cachorro",          brand:"Mastín", category:"perros", subcategory:"cachorro",     weight:"15 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-mt-04", name:"Mastín Adulto Raza Peq.",  brand:"Mastín", category:"perros", subcategory:"raza-pequeña", weight:"10 kg", image:IMG_PERRO, tags:[] },
+  { id:"p-mt-01", name:"Mastín Adulto",            brand:"Mastín", category:"perros", subcategory:"adulto",       weight:"22 kg", image:IMG_MASTIN, tags:[] },
+  { id:"p-mt-02", name:"Mastín Senior",            brand:"Mastín", category:"perros", subcategory:"senior",       weight:"20 kg", image:IMG_MASTIN, tags:[] },
+  { id:"p-mt-03", name:"Mastín Cachorro",          brand:"Mastín", category:"perros", subcategory:"cachorro",     weight:"15 kg", image:IMG_MASTIN, tags:[] },
+  { id:"p-mt-04", name:"Mastín Adulto Raza Peq.",  brand:"Mastín", category:"perros", subcategory:"raza-pequeña", weight:"10 kg", image:IMG_MASTIN, tags:[] },
 
   // PERROS — NOMADE
-  { id:"p-nm-01", name:"Nomade Adulto Carne",           brand:"Nomade", category:"perros", subcategory:"adulto",       weight:"20 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-nm-02", name:"Nomade Adulto Al Granel",       brand:"Nomade", category:"perros", subcategory:"adulto",       weight:"A granel",  image:IMG_PERRO, tags:[] },
-  { id:"p-nm-03", name:"Nomade Adulto Raza Pequeña",    brand:"Nomade", category:"perros", subcategory:"raza-pequeña", weight:"10 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-nm-04", name:"Nomade Cachorro",               brand:"Nomade", category:"perros", subcategory:"cachorro",     weight:"10 kg", image:IMG_PERRO, tags:[] },
+  { id:"p-nm-01", name:"Nomade Adulto Carne",           brand:"Nomade", category:"perros", subcategory:"adulto",       weight:"20 kg", image:IMG_NOMADE, tags:[] },
+  { id:"p-nm-02", name:"Nomade Adulto Al Granel",       brand:"Nomade", category:"perros", subcategory:"adulto",       weight:"A granel",  image:IMG_NOMADE, tags:[] },
+  { id:"p-nm-03", name:"Nomade Adulto Raza Pequeña",    brand:"Nomade", category:"perros", subcategory:"raza-pequeña", weight:"10 kg", image:IMG_NOMADE, tags:[] },
+  { id:"p-nm-04", name:"Nomade Cachorro",               brand:"Nomade", category:"perros", subcategory:"cachorro",     weight:"10 kg", image:IMG_NOMADE, tags:[] },
 
   // PERROS — FIT
-  { id:"p-ft-01", name:"Fit Adulto Carne",               brand:"Fit", category:"perros", subcategory:"adulto",       weight:"20 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-ft-02", name:"Fit Adulto Raza Pequeña",        brand:"Fit", category:"perros", subcategory:"raza-pequeña", weight:"10 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-ft-03", name:"Fit Senior Raza Pequeña",        brand:"Fit", category:"perros", subcategory:"senior",       weight:"10 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-ft-04", name:"Fit Cachorro",                   brand:"Fit", category:"perros", subcategory:"cachorro",     weight:"10 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-ft-05", name:"Fit Senior Raza Med-Grande",     brand:"Fit", category:"perros", subcategory:"senior",       weight:"20 kg", image:IMG_PERRO, tags:[] },
+  { id:"p-ft-01", name:"Fit Adulto Carne",               brand:"Fit", category:"perros", subcategory:"adulto",       weight:"20 kg", image:IMG_FIT, tags:[] },
+  { id:"p-ft-02", name:"Fit Adulto Raza Pequeña",        brand:"Fit", category:"perros", subcategory:"raza-pequeña", weight:"10 kg", image:IMG_FIT, tags:[] },
+  { id:"p-ft-03", name:"Fit Senior Raza Pequeña",        brand:"Fit", category:"perros", subcategory:"senior",       weight:"10 kg", image:IMG_FIT, tags:[] },
+  { id:"p-ft-04", name:"Fit Cachorro",                   brand:"Fit", category:"perros", subcategory:"cachorro",     weight:"10 kg", image:IMG_FIT, tags:[] },
+  { id:"p-ft-05", name:"Fit Senior Raza Med-Grande",     brand:"Fit", category:"perros", subcategory:"senior",       weight:"20 kg", image:IMG_FIT, tags:[] },
 
   // PERROS — ALFA
   { id:"p-al-01", name:"Alfa Premium Raza Med-Grande",   brand:"Alfa", category:"perros", subcategory:"adulto",       weight:"20 kg", image:IMG_PERRO, tags:["premium"] },
@@ -93,17 +106,17 @@ export const products: Product[] = [
   { id:"p-al-08", name:"Alfa Dog Cachorro Raza Pequeña", brand:"Alfa", category:"perros", subcategory:"cachorro",     weight:"3 kg",  image:IMG_PERRO, tags:[] },
 
   // PERROS — DOG CHOW
-  { id:"p-dc-01", name:"Dog Chow Adulto Carne Med-Grande",  brand:"Dog Chow", category:"perros", subcategory:"adulto",       weight:"19.5 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-dc-02", name:"Dog Chow Adulto Raza Pequeña",      brand:"Dog Chow", category:"perros", subcategory:"raza-pequeña", weight:"19.5 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-dc-03", name:"Dog Chow Longevo",                  brand:"Dog Chow", category:"perros", subcategory:"senior",       weight:"15 kg",   image:IMG_PERRO, tags:[] },
-  { id:"p-dc-04", name:"Dog Chow Cachorro Raza Pequeña",    brand:"Dog Chow", category:"perros", subcategory:"cachorro",     weight:"19.5 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-dc-05", name:"Dog Chow Cachorro Med-Grande",      brand:"Dog Chow", category:"perros", subcategory:"cachorro",     weight:"19.5 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-dc-06", name:"Dog Chow Adulto Med-Grande",        brand:"Dog Chow", category:"perros", subcategory:"adulto",       weight:"8 kg",    image:IMG_PERRO, tags:[] },
-  { id:"p-dc-07", name:"Dog Chow Adulto Raza Pequeña",      brand:"Dog Chow", category:"perros", subcategory:"raza-pequeña", weight:"3 kg",    image:IMG_PERRO, tags:[] },
-  { id:"p-dc-08", name:"Dog Chow Longevo",                  brand:"Dog Chow", category:"perros", subcategory:"senior",       weight:"3 kg",    image:IMG_PERRO, tags:[] },
-  { id:"p-dc-09", name:"Dog Chow Cachorro Med-Grande",      brand:"Dog Chow", category:"perros", subcategory:"cachorro",     weight:"3 kg",    image:IMG_PERRO, tags:[] },
-  { id:"p-dc-10", name:"Dog Chow Cachorro Raza Pequeña",    brand:"Dog Chow", category:"perros", subcategory:"cachorro",     weight:"3 kg",    image:IMG_PERRO, tags:[] },
-  { id:"p-dc-11", name:"Dog Chow Longevo",                  brand:"Dog Chow", category:"perros", subcategory:"senior",       weight:"8 kg",    image:IMG_PERRO, tags:[] },
+  { id:"p-dc-01", name:"Dog Chow Adulto Carne Med-Grande",  brand:"Dog Chow", category:"perros", subcategory:"adulto",       weight:"19.5 kg", image:IMG_DOG_CHOW, tags:[] },
+  { id:"p-dc-02", name:"Dog Chow Adulto Raza Pequeña",      brand:"Dog Chow", category:"perros", subcategory:"raza-pequeña", weight:"19.5 kg", image:IMG_DOG_CHOW, tags:[] },
+  { id:"p-dc-03", name:"Dog Chow Longevo",                  brand:"Dog Chow", category:"perros", subcategory:"senior",       weight:"15 kg",   image:IMG_DOG_CHOW, tags:[] },
+  { id:"p-dc-04", name:"Dog Chow Cachorro Raza Pequeña",    brand:"Dog Chow", category:"perros", subcategory:"cachorro",     weight:"19.5 kg", image:IMG_DOG_CHOW, tags:[] },
+  { id:"p-dc-05", name:"Dog Chow Cachorro Med-Grande",      brand:"Dog Chow", category:"perros", subcategory:"cachorro",     weight:"19.5 kg", image:IMG_DOG_CHOW, tags:[] },
+  { id:"p-dc-06", name:"Dog Chow Adulto Med-Grande",        brand:"Dog Chow", category:"perros", subcategory:"adulto",       weight:"8 kg",    image:IMG_DOG_CHOW, tags:[] },
+  { id:"p-dc-07", name:"Dog Chow Adulto Raza Pequeña",      brand:"Dog Chow", category:"perros", subcategory:"raza-pequeña", weight:"3 kg",    image:IMG_DOG_CHOW, tags:[] },
+  { id:"p-dc-08", name:"Dog Chow Longevo",                  brand:"Dog Chow", category:"perros", subcategory:"senior",       weight:"3 kg",    image:IMG_DOG_CHOW, tags:[] },
+  { id:"p-dc-09", name:"Dog Chow Cachorro Med-Grande",      brand:"Dog Chow", category:"perros", subcategory:"cachorro",     weight:"3 kg",    image:IMG_DOG_CHOW, tags:[] },
+  { id:"p-dc-10", name:"Dog Chow Cachorro Raza Pequeña",    brand:"Dog Chow", category:"perros", subcategory:"cachorro",     weight:"3 kg",    image:IMG_DOG_CHOW, tags:[] },
+  { id:"p-dc-11", name:"Dog Chow Longevo",                  brand:"Dog Chow", category:"perros", subcategory:"senior",       weight:"8 kg",    image:IMG_DOG_CHOW, tags:[] },
 
   // PERROS — EXCELLENT
   { id:"p-ex-01", name:"Excellent Fórmula",         brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"15 kg", image:IMG_PERRO, tags:[] },
@@ -112,9 +125,9 @@ export const products: Product[] = [
   { id:"p-ex-04", name:"Excellent Sensitive Salmón",brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"12 kg", image:IMG_PERRO, tags:[] },
 
   // PERROS — JOSERA
-  { id:"p-jo-01", name:"Josera Cachorro",   brand:"Josera", category:"perros", subcategory:"cachorro", weight:"18 kg", image:IMG_PERRO, tags:["premium"] },
-  { id:"p-jo-02", name:"Josera Dog Adulto", brand:"Josera", category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_PERRO, tags:["premium"] },
-  { id:"p-jo-03", name:"Josera Festival",   brand:"Josera", category:"perros", subcategory:"adulto",   weight:"12 kg", image:IMG_PERRO, tags:[] },
+  { id:"p-jo-01", name:"Josera Cachorro",   brand:"Josera", category:"perros", subcategory:"cachorro", weight:"18 kg", image:IMG_JOSERA, tags:["premium"] },
+  { id:"p-jo-02", name:"Josera Dog Adulto", brand:"Josera", category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_JOSERA, tags:["premium"] },
+  { id:"p-jo-03", name:"Josera Festival",   brand:"Josera", category:"perros", subcategory:"adulto",   weight:"12 kg", image:IMG_JOSERA, tags:[] },
 
   // PERROS — OTROS
   { id:"p-ba-01", name:"Bávaro Wok",              brand:"Bávaro",    category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_PERRO, tags:[] },
@@ -122,9 +135,9 @@ export const products: Product[] = [
   { id:"p-can-01",name:"Can Adulto Carne",         brand:"Can",       category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_PERRO, tags:[] },
   { id:"p-can-02",name:"Can Adulto Cordero",       brand:"Can",       category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_PERRO, tags:[] },
   { id:"p-can-03",name:"Can Cachorro",             brand:"Can",       category:"perros", subcategory:"cachorro", weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-gu-01", name:"Guardián Adulto",          brand:"Guardián",  category:"perros", subcategory:"adulto",   weight:"22 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-gu-02", name:"Guardián Cachorro",        brand:"Guardián",  category:"perros", subcategory:"cachorro", weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-gu-03", name:"Guardián Cachorro",        brand:"Guardián",  category:"perros", subcategory:"cachorro", weight:"8 kg",  image:IMG_PERRO, tags:[] },
+  { id:"p-gu-01", name:"Guardián Adulto",          brand:"Guardián",  category:"perros", subcategory:"adulto",   weight:"22 kg", image:IMG_GUARDIAN, tags:[] },
+  { id:"p-gu-02", name:"Guardián Cachorro",        brand:"Guardián",  category:"perros", subcategory:"cachorro", weight:"18 kg", image:IMG_GUARDIAN, tags:[] },
+  { id:"p-gu-03", name:"Guardián Cachorro",        brand:"Guardián",  category:"perros", subcategory:"cachorro", weight:"8 kg",  image:IMG_GUARDIAN, tags:[] },
   { id:"p-hi-01", name:"Himalaya Adulto Carne",    brand:"Himalaya",  category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_PERRO, tags:[] },
   { id:"p-hi-02", name:"Himalaya Cachorro",        brand:"Himalaya",  category:"perros", subcategory:"cachorro", weight:"18 kg", image:IMG_PERRO, tags:[] },
   { id:"p-hi-03", name:"Himalaya Adulto Carne",    brand:"Himalaya",  category:"perros", subcategory:"adulto",   weight:"10 kg", image:IMG_PERRO, tags:[] },
@@ -138,11 +151,11 @@ export const products: Product[] = [
   // ─────────────────────────────────────────────
   // GATOS — CAT CHOW
   // ─────────────────────────────────────────────
-  { id:"g-cc-01", name:"Cat Chow Gatitos",  brand:"Cat Chow", category:"gatos", subcategory:"gatito",  weight:"8 kg",    image:IMG_GATO, tags:[] },
-  { id:"g-cc-02", name:"Cat Chow Gatito",   brand:"Cat Chow", category:"gatos", subcategory:"gatito",  weight:"3 kg",    image:IMG_GATO, tags:[] },
-  { id:"g-cc-03", name:"Cat Chow Pescado",  brand:"Cat Chow", category:"gatos", subcategory:"adulto",  weight:"19.5 kg", image:IMG_GATO, tags:[] },
-  { id:"g-cc-04", name:"Cat Chow Pescado",  brand:"Cat Chow", category:"gatos", subcategory:"adulto",  weight:"8 kg",    image:IMG_GATO, tags:[] },
-  { id:"g-cc-05", name:"Cat Chow Pescado",  brand:"Cat Chow", category:"gatos", subcategory:"adulto",  weight:"3 kg",    image:IMG_GATO, tags:[] },
+  { id:"g-cc-01", name:"Cat Chow Gatitos",  brand:"Cat Chow", category:"gatos", subcategory:"gatito",  weight:"8 kg",    image:IMG_CAT_CHOW, tags:[] },
+  { id:"g-cc-02", name:"Cat Chow Gatito",   brand:"Cat Chow", category:"gatos", subcategory:"gatito",  weight:"3 kg",    image:IMG_CAT_CHOW, tags:[] },
+  { id:"g-cc-03", name:"Cat Chow Pescado",  brand:"Cat Chow", category:"gatos", subcategory:"adulto",  weight:"19.5 kg", image:IMG_CAT_CHOW, tags:[] },
+  { id:"g-cc-04", name:"Cat Chow Pescado",  brand:"Cat Chow", category:"gatos", subcategory:"adulto",  weight:"8 kg",    image:IMG_CAT_CHOW, tags:[] },
+  { id:"g-cc-05", name:"Cat Chow Pescado",  brand:"Cat Chow", category:"gatos", subcategory:"adulto",  weight:"3 kg",    image:IMG_CAT_CHOW, tags:[] },
 
   // GATOS — COSHITO
   { id:"g-co-01", name:"Coshito Salmón", brand:"Coshito", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_GATO, tags:[] },
@@ -153,7 +166,7 @@ export const products: Product[] = [
   { id:"g-ex-02", name:"Excellent Gato Urinary",      brand:"Excellent", category:"gatos", subcategory:"esterilizado", weight:"7.5 kg", image:IMG_GATO, tags:[] },
 
   // GATOS — FIT / FULL CAT / HIMALAYA / MASKOCAT
-  { id:"g-ft-01", name:"Fit Gato",      brand:"Fit",      category:"gatos", subcategory:"adulto", weight:"10 kg", image:IMG_GATO, tags:[] },
+  { id:"g-ft-01", name:"Fit Gato",      brand:"Fit",      category:"gatos", subcategory:"adulto", weight:"10 kg", image:IMG_FIT, tags:[] },
   { id:"g-fc-01", name:"Full Cat",      brand:"Full Cat", category:"gatos", subcategory:"adulto", weight:"10 kg", image:IMG_GATO, tags:[] },
   { id:"g-fc-02", name:"Full Cat",      brand:"Full Cat", category:"gatos", subcategory:"adulto", weight:"25 kg", image:IMG_GATO, tags:[] },
   { id:"g-hm-01", name:"Himalaya Cat",  brand:"Himalaya", category:"gatos", subcategory:"adulto", weight:"10 kg", image:IMG_GATO, tags:[] },
@@ -161,14 +174,14 @@ export const products: Product[] = [
   { id:"g-mk-02", name:"Maskocat",      brand:"Maskocat", category:"gatos", subcategory:"adulto", weight:"10 kg", image:IMG_GATO, tags:[] },
 
   // GATOS — MASTER CAT
-  { id:"g-mc-01", name:"Master Cat Carne",   brand:"Master Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_GATO, tags:["popular"] },
-  { id:"g-mc-02", name:"Master Cat Gatito",  brand:"Master Cat", category:"gatos", subcategory:"gatito", weight:"20 kg", image:IMG_GATO, tags:[] },
-  { id:"g-mc-03", name:"Master Cat Pollo",   brand:"Master Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_GATO, tags:[] },
-  { id:"g-mc-04", name:"Master Cat Relleno", brand:"Master Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_GATO, tags:[] },
-  { id:"g-mc-05", name:"Master Cat Salmón",  brand:"Master Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_GATO, tags:[] },
+  { id:"g-mc-01", name:"Master Cat Carne",   brand:"Master Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_MASTER_CAT, tags:["popular"] },
+  { id:"g-mc-02", name:"Master Cat Gatito",  brand:"Master Cat", category:"gatos", subcategory:"gatito", weight:"20 kg", image:IMG_MASTER_CAT, tags:[] },
+  { id:"g-mc-03", name:"Master Cat Pollo",   brand:"Master Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_MASTER_CAT, tags:[] },
+  { id:"g-mc-04", name:"Master Cat Relleno", brand:"Master Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_MASTER_CAT, tags:[] },
+  { id:"g-mc-05", name:"Master Cat Salmón",  brand:"Master Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_MASTER_CAT, tags:[] },
 
   // GATOS — NOMADE / ONE
-  { id:"g-nm-01", name:"Nomade Gato",              brand:"Nomade", category:"gatos", subcategory:"adulto", weight:"10 kg", image:IMG_GATO, tags:[] },
+  { id:"g-nm-01", name:"Nomade Gato",              brand:"Nomade", category:"gatos", subcategory:"adulto", weight:"10 kg", image:IMG_NOMADE, tags:[] },
   { id:"g-on-01", name:"One Gatito",               brand:"One",    category:"gatos", subcategory:"gatito", weight:"2 kg",  image:IMG_GATO, tags:[] },
   { id:"g-on-02", name:"One Gato Pollo y Salmón",  brand:"One",    category:"gatos", subcategory:"adulto", weight:"2 kg",  image:IMG_GATO, tags:[] },
 
@@ -187,8 +200,8 @@ export const products: Product[] = [
   { id:"g-rc-01", name:"Royal Canin Cat Urinary S/O", brand:"Royal Canin", category:"gatos", subcategory:"esterilizado", weight:"1.5 kg", image:IMG_GATO, tags:["premium"] },
 
   // GATOS — SABROCAT
-  { id:"g-sc-01", name:"Sabrocat Pollo", brand:"Sabrocat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_GATO, tags:[] },
-  { id:"g-sc-02", name:"Sabrocat Pollo", brand:"Sabrocat", category:"gatos", subcategory:"adulto", weight:"8 kg",  image:IMG_GATO, tags:[] },
+  { id:"g-sc-01", name:"Sabrocat Pollo", brand:"Sabrocat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_SABROCAT, tags:[] },
+  { id:"g-sc-02", name:"Sabrocat Pollo", brand:"Sabrocat", category:"gatos", subcategory:"adulto", weight:"8 kg",  image:IMG_SABROCAT, tags:[] },
 
   // GATOS — LEONARDO CAT
   { id:"g-lc-01", name:"Leonardo Cat Adulto Duck",       brand:"Leonardo Cat", category:"gatos", subcategory:"adulto",       weight:"1.8 kg", image:IMG_GATO, tags:[] },
@@ -206,8 +219,8 @@ export const products: Product[] = [
   { id:"g-wh-02", name:"Whiskas Gatitos",         brand:"Whiskas",      category:"gatos", subcategory:"gatito", weight:"10 kg", image:"/products/whiskas.jpg", tags:[] },
   { id:"g-wh-03", name:"Whiskas Pescado",         brand:"Whiskas",      category:"gatos", subcategory:"adulto", weight:"10 kg", image:"/products/whiskas.jpg", tags:[] },
   { id:"g-wh-04", name:"Whiskas Pollo y Leche",   brand:"Whiskas",      category:"gatos", subcategory:"adulto", weight:"10 kg", image:"/products/whiskas.jpg", tags:[] },
-  { id:"g-chc-01",name:"Champion Cat Carne",      brand:"Champion Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_GATO, tags:[] },
-  { id:"g-chc-02",name:"Champion Cat Gatito",     brand:"Champion Cat", category:"gatos", subcategory:"gatito", weight:"20 kg", image:IMG_GATO, tags:[] },
-  { id:"g-chc-03",name:"Champion Cat Pescado",    brand:"Champion Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_GATO, tags:[] },
-  { id:"g-chc-04",name:"Champion Cat Pollo",      brand:"Champion Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_GATO, tags:[] },
+  { id:"g-chc-01",name:"Champion Cat Carne",      brand:"Champion Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_CHAMPION_CAT, tags:[] },
+  { id:"g-chc-02",name:"Champion Cat Gatito",     brand:"Champion Cat", category:"gatos", subcategory:"gatito", weight:"20 kg", image:IMG_CHAMPION_CAT, tags:[] },
+  { id:"g-chc-03",name:"Champion Cat Pescado",    brand:"Champion Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_CHAMPION_CAT, tags:[] },
+  { id:"g-chc-04",name:"Champion Cat Pollo",      brand:"Champion Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:IMG_CHAMPION_CAT, tags:[] },
 ];
