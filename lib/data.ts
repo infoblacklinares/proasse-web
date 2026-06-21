@@ -49,7 +49,7 @@ export const products: Product[] = [
   { id:"p-md-07", name:"Master Dog Raza Pequeña",              brand:"Master Dog", category:"perros", subcategory:"raza-pequeña", weight:"8 kg",  image:IMG_PERRO, tags:[] },
   { id:"p-md-08", name:"Master Dog Cachorro",                  brand:"Master Dog", category:"perros", subcategory:"cachorro",     weight:"8 kg",  image:IMG_PERRO, tags:[] },
   { id:"p-md-09", name:"Master Dog Senior",                    brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"8 kg",  image:IMG_PERRO, tags:[] },
-  { id:"p-md-10", name:"Master Dog Al Granel",                 brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"x kg",  image:IMG_PERRO, tags:[] },
+  { id:"p-md-10", name:"Master Dog Al Granel",                 brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"A granel",  image:IMG_PERRO, tags:[] },
 
   // PERROS — CHAMPION DOG
   { id:"p-cd-01", name:"Champion Dog Adulto Carne",            brand:"Champion Dog", category:"perros", subcategory:"adulto",       weight:"18 kg", image:"/products/champion-dog.jpg", tags:["destacado"] },
@@ -71,7 +71,7 @@ export const products: Product[] = [
 
   // PERROS — NOMADE
   { id:"p-nm-01", name:"Nomade Adulto Carne",           brand:"Nomade", category:"perros", subcategory:"adulto",       weight:"20 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-nm-02", name:"Nomade Adulto Al Granel",       brand:"Nomade", category:"perros", subcategory:"adulto",       weight:"x kg",  image:IMG_PERRO, tags:[] },
+  { id:"p-nm-02", name:"Nomade Adulto Al Granel",       brand:"Nomade", category:"perros", subcategory:"adulto",       weight:"A granel",  image:IMG_PERRO, tags:[] },
   { id:"p-nm-03", name:"Nomade Adulto Raza Pequeña",    brand:"Nomade", category:"perros", subcategory:"raza-pequeña", weight:"10 kg", image:IMG_PERRO, tags:[] },
   { id:"p-nm-04", name:"Nomade Cachorro",               brand:"Nomade", category:"perros", subcategory:"cachorro",     weight:"10 kg", image:IMG_PERRO, tags:[] },
 
