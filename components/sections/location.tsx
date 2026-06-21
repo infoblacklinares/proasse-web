@@ -9,47 +9,58 @@ export function Location() {
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           {/* Sucursal 1 */}
-          <div className="bg-paper rounded-2xl p-6 shadow-sm border border-line">
-            <div className="flex items-start gap-4">
-              <span className="text-3xl">🏪</span>
-              <div>
-                <h3 className="font-extrabold text-ink text-xl">Sucursal 1</h3>
-                <p className="text-ink text-lg font-semibold mt-1">Valentín Letelier 1008</p>
-                <p className="text-ink-soft text-base">Linares, Chile</p>
-                <a
-                  href="https://maps.google.com/?q=Valentín+Letelier+1008+Linares+Chile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-3 px-4 py-2 bg-accent text-paper rounded-xl font-bold text-sm hover:bg-accent-deep transition-colors"
-                >
-                  Ver en Google Maps →
-                </a>
-              </div>
+          <div className="bg-paper rounded-2xl p-6 shadow-sm border border-line space-y-4">
+            <h3 className="font-extrabold text-ink text-xl">🏪 Sucursal 1</h3>
+            <div className="space-y-2">
+              <p className="text-ink text-lg font-semibold">Valentín Letelier 1008</p>
+              <p className="text-ink-soft text-base">Linares, Chile</p>
             </div>
+            <div className="bg-bg-2 rounded-xl px-4 py-3 space-y-1">
+              <p className="font-bold text-ink text-base">🕘 Horario</p>
+              <p className="text-ink-soft text-base">Lunes a sábado · 9:00 — 20:00 hrs</p>
+            </div>
+            <a
+              href="https://maps.google.com/?q=Valentín+Letelier+1008+Linares+Chile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-accent text-paper rounded-xl font-bold text-base hover:bg-accent-deep transition-colors"
+            >
+              Ver en Google Maps →
+            </a>
           </div>
 
           {/* Sucursal 2 */}
-          <div className="bg-paper rounded-2xl p-6 shadow-sm border border-line">
-            <div className="flex items-start gap-4">
-              <span className="text-3xl">🏪</span>
-              <div>
-                <h3 className="font-extrabold text-ink text-xl">Sucursal 2</h3>
-                <p className="text-ink text-lg font-semibold mt-1">Maipú 772-A</p>
-                <p className="text-ink-soft text-base">Linares, Chile</p>
-                <a
-                  href="https://maps.google.com/?q=Maipú+772-A+Linares+Chile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-3 px-4 py-2 bg-accent text-paper rounded-xl font-bold text-sm hover:bg-accent-deep transition-colors"
-                >
-                  Ver en Google Maps →
-                </a>
-              </div>
+          <div className="bg-paper rounded-2xl p-6 shadow-sm border border-line space-y-4">
+            <h3 className="font-extrabold text-ink text-xl">🏪 Sucursal 2</h3>
+            <div className="space-y-2">
+              <p className="text-ink text-lg font-semibold">Maipú 772-A</p>
+              <p className="text-ink-soft text-base">Linares, Chile</p>
             </div>
+            <div className="bg-bg-2 rounded-xl px-4 py-3 space-y-1">
+              <p className="font-bold text-ink text-base">🕘 Horario</p>
+              <p className="text-ink-soft text-base">Lunes a sábado · 9:00 — 20:00 hrs</p>
+            </div>
+            <a
+              href="https://maps.google.com/?q=Maipú+772-A+Linares+Chile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-accent text-paper rounded-xl font-bold text-base hover:bg-accent-deep transition-colors"
+            >
+              Ver en Google Maps →
+            </a>
           </div>
         </div>
 
-        {/* Mapa embebido - Valentín Letelier 1008, Linares */}
+        {/* Delivery info */}
+        <div className="bg-accent/10 border border-accent/30 rounded-2xl px-5 py-4 mb-8 flex items-start gap-3">
+          <span className="text-2xl">🚚</span>
+          <div>
+            <p className="font-bold text-ink text-base">Delivery disponible</p>
+            <p className="text-ink-soft text-base">Después de las 19:00 hrs · Solo $600 adicionales</p>
+          </div>
+        </div>
+
+        {/* Mapa embebido */}
         <div className="rounded-2xl overflow-hidden shadow-sm border border-line">
           <iframe
             src="https://maps.google.com/maps?q=Valentín+Letelier+1008,Linares,Chile&output=embed"
