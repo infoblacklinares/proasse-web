@@ -21,9 +21,18 @@ export const metadata: Metadata = {
   keywords: [
     "alimentos para mascotas linares",
     "comida para perros linares",
+    "comida para gatos linares",
     "tienda mascotas linares",
     "proasse linares",
-    "delivery alimentos mascotas linares"
+    "delivery alimentos mascotas linares",
+    "alimento perro linares",
+    "pedigree linares",
+    "pro plan linares",
+    "dog chow linares",
+    "cat chow linares",
+    "master dog linares",
+    "whiskas linares",
+    "sabrokan linares"
   ],
   openGraph: {
     type: "website",
@@ -45,18 +54,27 @@ export const viewport: Viewport = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "PetStore",
   name: siteConfig.fullName,
   description: siteConfig.description,
   url: siteConfig.site.url,
   telephone: `+${siteConfig.contact.whatsapp}`,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: siteConfig.location.address,
-    addressLocality: siteConfig.location.city,
-    addressRegion: siteConfig.location.region,
-    addressCountry: "CL"
-  },
+  address: [
+    {
+      "@type": "PostalAddress",
+      streetAddress: siteConfig.location.address,
+      addressLocality: siteConfig.location.city,
+      addressRegion: siteConfig.location.region,
+      addressCountry: "CL"
+    },
+    {
+      "@type": "PostalAddress",
+      streetAddress: siteConfig.location.address2,
+      addressLocality: siteConfig.location.city,
+      addressRegion: siteConfig.location.region,
+      addressCountry: "CL"
+    }
+  ],
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
