@@ -40,8 +40,21 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Links rápidos */}
+        <div className="flex flex-wrap gap-4 text-sm text-paper/60 border-t border-paper/10 pt-4">
+          <a href="#catalogo" className="hover:text-paper transition-colors">Catálogo</a>
+          <span>·</span>
+          <a href="#ubicacion" className="hover:text-paper transition-colors">Dónde estamos</a>
+          <span>·</span>
+          <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-paper transition-colors">WhatsApp</a>
+          <span>·</span>
+          <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-paper transition-colors">Instagram</a>
+          <span>·</span>
+          <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-paper transition-colors">Facebook</a>
+        </div>
+
         {/* Bottom */}
-        <div className="border-t border-paper/10 pt-4 flex flex-col sm:flex-row justify-between gap-2 text-sm text-paper/50">
+        <div className="flex flex-col sm:flex-row justify-between gap-2 text-sm text-paper/40">
           <p>© {new Date().getFullYear()} {siteConfig.fullName}</p>
           <p>
             Hecho por{" "}

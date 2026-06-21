@@ -1,8 +1,12 @@
 "use client";
 
 import { whatsappUrl } from "@/lib/whatsapp";
+import { useCart } from "@/lib/cart-context";
 
 export function WhatsappFab() {
+  const { state } = useCart();
+  if (state.open) return null;
+
   return (
     <a
       href={whatsappUrl()}
