@@ -1,6 +1,7 @@
 import { Nav } from "@/components/sections/nav";
 import { Hero } from "@/components/sections/hero";
 import { Catalog } from "@/components/sections/catalog";
+import { Location } from "@/components/sections/location";
 import { Footer } from "@/components/sections/footer";
 import { CartDrawer } from "@/components/ui/cart-drawer";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <main className="min-h-screen bg-bg">
         <Hero />
         <Catalog />
+        <Location />
       </main>
       <Footer />
       <CartDrawer />
