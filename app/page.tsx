@@ -4,6 +4,7 @@ import { Catalog } from "@/components/sections/catalog";
 import { Location } from "@/components/sections/location";
 import { Footer } from "@/components/sections/footer";
 import { CartDrawer } from "@/components/ui/cart-drawer";
+import { WhatsappFab } from "@/components/ui/whatsapp-fab";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </main>
       <Footer />
       <CartDrawer />
+      <WhatsappFab />
     </>
   );
 }
