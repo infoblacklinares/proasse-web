@@ -53,16 +53,16 @@ export const products: Product[] = [
   // ─────────────────────────────────────────────
   // PERROS — MASTER DOG
   // ─────────────────────────────────────────────
-  { id:"p-md-01", name:"Master Dog Adulto Carne",              brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"18 kg", image:IMG_MASTER_DOG, tags:["popular"] },
-  { id:"p-md-02", name:"Master Dog Adulto Pollo",              brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"18 kg", image:IMG_MASTER_DOG, tags:[] },
-  { id:"p-md-03", name:"Master Dog Adulto Raza Pequeña Carne", brand:"Master Dog", category:"perros", subcategory:"raza-pequeña", weight:"18 kg", image:IMG_MASTER_DOG, tags:[] },
-  { id:"p-md-04", name:"Master Dog Senior Carne",              brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"18 kg", image:IMG_MASTER_DOG, tags:[] },
-  { id:"p-md-05", name:"Master Dog Senior",                    brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"18 kg", image:IMG_MASTER_DOG, tags:[] },
-  { id:"p-md-06", name:"Master Dog Cachorro",                  brand:"Master Dog", category:"perros", subcategory:"cachorro",     weight:"18 kg", image:IMG_MASTER_DOG, tags:[] },
-  { id:"p-md-07", name:"Master Dog Raza Pequeña",              brand:"Master Dog", category:"perros", subcategory:"raza-pequeña", weight:"8 kg",  image:IMG_MASTER_DOG, tags:[] },
-  { id:"p-md-08", name:"Master Dog Cachorro",                  brand:"Master Dog", category:"perros", subcategory:"cachorro",     weight:"8 kg",  image:IMG_MASTER_DOG, tags:[] },
-  { id:"p-md-09", name:"Master Dog Senior",                    brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"8 kg",  image:IMG_MASTER_DOG, tags:[] },
-  { id:"p-md-10", name:"Master Dog Al Granel",                 brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"A granel",  image:IMG_MASTER_DOG, tags:[] },
+  { id:"p-md-01", name:"Master Dog Adulto Carne",              brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"18 kg",   image:IMG_MASTER_DOG, tags:["popular"] },
+  { id:"p-md-02", name:"Master Dog Adulto Pollo",              brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"18 kg",   image:"https://static.wixstatic.com/media/3b9c32_598cd4fd04fd4f45a777d0dbc7c29dd3~mv2.png/v1/fit/w_500,h_500,q_90/file.png", tags:[] },
+  { id:"p-md-03", name:"Master Dog Adulto Raza Pequeña Carne", brand:"Master Dog", category:"perros", subcategory:"raza-pequeña", weight:"18 kg",   image:"https://www.befoods.cl/cdn/shop/files/e9a5baea-c033-4779-9f8f-07b5bf36e1ee.jpg?v=1753706564", tags:[] },
+  { id:"p-md-04", name:"Master Dog Senior Carne",              brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"18 kg",   image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/03/MASTERDOG-SENIOR_1_RAZA_GRANDE-2.jpg", tags:[] },
+  { id:"p-md-05", name:"Master Dog Senior",                    brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"18 kg",   image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/03/MASTERDOG-SENIOR_1_RAZA_GRANDE-2.jpg", tags:[] },
+  { id:"p-md-06", name:"Master Dog Cachorro",                  brand:"Master Dog", category:"perros", subcategory:"cachorro",     weight:"18 kg",   image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/03/MASTER_DOG_CACHORRO_RAZA_MEDIANA_1.jpg", tags:[] },
+  { id:"p-md-07", name:"Master Dog Raza Pequeña",              brand:"Master Dog", category:"perros", subcategory:"raza-pequeña", weight:"8 kg",    image:"https://fullerton.cl/wp-content/uploads/2019/05/MASTER-DOG-ADULTO-RAZA-PEQUE%C3%91A-X-8-KG.jpg", tags:[] },
+  { id:"p-md-08", name:"Master Dog Cachorro",                  brand:"Master Dog", category:"perros", subcategory:"cachorro",     weight:"8 kg",    image:"https://fullerton.cl/wp-content/uploads/2019/04/M.Dog-Cachorros-Razas-Medianas-8kg_resize-1.jpg", tags:[] },
+  { id:"p-md-09", name:"Master Dog Senior",                    brand:"Master Dog", category:"perros", subcategory:"senior",       weight:"8 kg",    image:"https://fullerton.cl/wp-content/uploads/2019/04/MASTER-DOG-SENIOR-X-8-KG.jpg", tags:[] },
+  { id:"p-md-10", name:"Master Dog Al Granel",                 brand:"Master Dog", category:"perros", subcategory:"adulto",       weight:"A granel", image:IMG_MASTER_DOG, tags:[] },
 
   // PERROS — CHAMPION DOG
   { id:"p-cd-01", name:"Champion Dog Adulto Carne",            brand:"Champion Dog", category:"perros", subcategory:"adulto",       weight:"18 kg", image:"/products/champion-dog.jpg", tags:["destacado"] },
