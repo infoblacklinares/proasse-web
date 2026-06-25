@@ -130,7 +130,7 @@ export const products: Product[] = [
   { id:"p-jo-03", name:"Josera Festival",   brand:"Josera", category:"perros", subcategory:"adulto",   weight:"12 kg", image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/07/765.webp", tags:[] },
 
   // PERROS — OTROS
-  { id:"p-ba-01", name:"Bávaro Wok",              brand:"Bávaro",    category:"perros", subcategory:"adulto",   weight:"18 kg", image:"https://comogatosyperros.cl/wp-content/uploads/2024/07/Bavaro-work-18kg.png", tags:[] },
+  { id:"p-ba-01", name:"Bávaro Wok",              brand:"Bávaro",    category:"perros", subcategory:"adulto",   weight:"18 kg", image:"https://cdnx.jumpseller.com/family-pets/image/8089531/resize/306/407?1645225126", tags:[] },
   { id:"p-mn-01", name:"Montañez Adulto Carne",   brand:"Montañez",  category:"perros", subcategory:"adulto",   weight:"20 kg", image:"https://entrehuevosyquesos.cl/contenido/uploads/2025/04/70128.webp", tags:[] },
   { id:"p-can-01",name:"Can Adulto Carne",         brand:"Can",       category:"perros", subcategory:"adulto",   weight:"18 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpH5bEpAzJPRerw0LkIHJh4NtzEANJbR9N_ZZAtOugbXcLL-S4SosZYgE&s=10", tags:[] },
   { id:"p-can-02",name:"Can Adulto Cordero",       brand:"Can",       category:"perros", subcategory:"adulto",   weight:"18 kg", image:"https://cdnx.jumpseller.com/family-pets/image/50968106/canadcordero.png?1737468526", tags:[] },
