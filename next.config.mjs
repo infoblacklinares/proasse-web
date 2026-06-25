@@ -23,7 +23,12 @@ const nextConfig = {
       { protocol: "https", hostname: "petvet.cl" },
       { protocol: "https", hostname: "puntomascotas.cl" },
       { protocol: "https", hostname: "zyz.cl" },
-      { protocol: "https", hostname: "petcity.cl" }
+      { protocol: "https", hostname: "petcity.cl" },
+      { protocol: "https", hostname: "comogatosyperros.cl" },
+      { protocol: "https", hostname: "entrehuevosyquesos.cl" },
+      { protocol: "https", hostname: "acdn-us.mitiendanube.com" },
+      { protocol: "https", hostname: "redpet.cl" },
+      { protocol: "https", hostname: "santaisabel.vtexassets.com" }
     ],
     formats: ["image/avif", "image/webp"]
   }

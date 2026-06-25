@@ -119,7 +119,7 @@ export const products: Product[] = [
   { id:"p-dc-11", name:"Dog Chow Longevo",                  brand:"Dog Chow", category:"perros", subcategory:"senior",       weight:"8 kg",    image:"https://fullerton.cl/wp-content/uploads/2021/12/Dog-Chow-adultos-7-Longevidad.jpg", tags:[] },
 
   // PERROS — EXCELLENT
-  { id:"p-ex-01", name:"Excellent Fórmula",         brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"15 kg", image:"https://petcity.cl/wp-content/uploads/2022/06/excellent-adulto-mantenimiento.jpg", tags:[] },
+  { id:"p-ex-01", name:"Excellent Fórmula",         brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"15 kg", image:"https://http2.mlstatic.com/D_NQ_NP_897098-MLU75722442018_042024-O.webp", tags:[] },
   { id:"p-ex-02", name:"Excellent Pollo y Arroz",   brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"15 kg", image:"https://petvet.cl/cdn/shop/files/purina-excellent-perro-adulto-pollo-arroz-15kg-924865.jpg?v=1714234087", tags:[] },
   { id:"p-ex-03", name:"Excellent Puppy",           brand:"Excellent", category:"perros", subcategory:"cachorro", weight:"12 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPtdmJSK2dDP_VCcSDmF8vo_3vthL0-UwpGfzUlUquNL4Z9vlwPGWKgU8&s=10", tags:[] },
   { id:"p-ex-04", name:"Excellent Sensitive Salmón",brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"12 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPSq5g-JiuEr3aow1ANQtHaigSnCtsKYkMH0IxKF8CIUiy4hGWhOSDF4-w&s=10", tags:[] },
@@ -130,23 +130,23 @@ export const products: Product[] = [
   { id:"p-jo-03", name:"Josera Festival",   brand:"Josera", category:"perros", subcategory:"adulto",   weight:"12 kg", image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/07/765.webp", tags:[] },
 
   // PERROS — OTROS
-  { id:"p-ba-01", name:"Bávaro Wok",              brand:"Bávaro",    category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-mn-01", name:"Montañez Adulto Carne",   brand:"Montañez",  category:"perros", subcategory:"adulto",   weight:"20 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-can-01",name:"Can Adulto Carne",         brand:"Can",       category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-can-02",name:"Can Adulto Cordero",       brand:"Can",       category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-can-03",name:"Can Cachorro",             brand:"Can",       category:"perros", subcategory:"cachorro", weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-gu-01", name:"Guardián Adulto",          brand:"Guardián",  category:"perros", subcategory:"adulto",   weight:"22 kg", image:IMG_GUARDIAN, tags:[] },
-  { id:"p-gu-02", name:"Guardián Cachorro",        brand:"Guardián",  category:"perros", subcategory:"cachorro", weight:"18 kg", image:IMG_GUARDIAN, tags:[] },
-  { id:"p-gu-03", name:"Guardián Cachorro",        brand:"Guardián",  category:"perros", subcategory:"cachorro", weight:"8 kg",  image:IMG_GUARDIAN, tags:[] },
-  { id:"p-hi-01", name:"Himalaya Adulto Carne",    brand:"Himalaya",  category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-hi-02", name:"Himalaya Cachorro",        brand:"Himalaya",  category:"perros", subcategory:"cachorro", weight:"18 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-hi-03", name:"Himalaya Adulto Carne",    brand:"Himalaya",  category:"perros", subcategory:"adulto",   weight:"10 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-hi-04", name:"Himalaya Cachorro",        brand:"Himalaya",  category:"perros", subcategory:"cachorro", weight:"10 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-rg-01", name:"Regal Pet Carne",          brand:"Regal Pet", category:"perros", subcategory:"adulto",   weight:"20 kg", image:IMG_PERRO, tags:[] },
+  { id:"p-ba-01", name:"Bávaro Wok",              brand:"Bávaro",    category:"perros", subcategory:"adulto",   weight:"18 kg", image:"https://comogatosyperros.cl/wp-content/uploads/2024/07/Bavaro-work-18kg.png", tags:[] },
+  { id:"p-mn-01", name:"Montañez Adulto Carne",   brand:"Montañez",  category:"perros", subcategory:"adulto",   weight:"20 kg", image:"https://entrehuevosyquesos.cl/contenido/uploads/2025/04/70128.webp", tags:[] },
+  { id:"p-can-01",name:"Can Adulto Carne",         brand:"Can",       category:"perros", subcategory:"adulto",   weight:"18 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpH5bEpAzJPRerw0LkIHJh4NtzEANJbR9N_ZZAtOugbXcLL-S4SosZYgE&s=10", tags:[] },
+  { id:"p-can-02",name:"Can Adulto Cordero",       brand:"Can",       category:"perros", subcategory:"adulto",   weight:"18 kg", image:"https://cdnx.jumpseller.com/family-pets/image/50968106/canadcordero.png?1737468526", tags:[] },
+  { id:"p-can-03",name:"Can Cachorro",             brand:"Can",       category:"perros", subcategory:"cachorro", weight:"18 kg", image:"https://cdnx.jumpseller.com/la-mascota/image/58714058/Can_Cachorro.png?1735581858", tags:[] },
+  { id:"p-gu-01", name:"Guardián Adulto",          brand:"Guardián",  category:"perros", subcategory:"adulto",   weight:"22 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwdtBCQ6w_1fHoXVehiChfPOUEl7fgGgmjjAE5dsA8uQ&s=10", tags:[] },
+  { id:"p-gu-02", name:"Guardián Cachorro",        brand:"Guardián",  category:"perros", subcategory:"cachorro", weight:"18 kg", image:"https://cdnx.jumpseller.com/alo-mascotas/image/67573253/resize/1079/1079?1774322049", tags:[] },
+  { id:"p-gu-03", name:"Guardián Cachorro",        brand:"Guardián",  category:"perros", subcategory:"cachorro", weight:"8 kg",  image:"https://cdnx.jumpseller.com/family-pets/image/57702582/thumb/1920/1920?1732832770", tags:[] },
+  { id:"p-hi-01", name:"Himalaya Adulto Carne",    brand:"Himalaya",  category:"perros", subcategory:"adulto",   weight:"18 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPfH7E9kXfks0VO812BhO8DB5yuOJ4aTSHox-AxbS0A&s=10", tags:[] },
+  { id:"p-hi-02", name:"Himalaya Cachorro",        brand:"Himalaya",  category:"perros", subcategory:"cachorro", weight:"18 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQEAy4HSXm2RFXOn13Cew8Xsi--DtnwtekPvWwJ08Nw&s=10", tags:[] },
+  { id:"p-hi-03", name:"Himalaya Adulto Carne",    brand:"Himalaya",  category:"perros", subcategory:"adulto",   weight:"10 kg", image:"https://acdn-us.mitiendanube.com/stores/006/864/648/products/fotos-pagina-web-alimentos-1-88fd6763d5827561bd17692627140821-1024-1024.webp", tags:[] },
+  { id:"p-hi-04", name:"Himalaya Cachorro",        brand:"Himalaya",  category:"perros", subcategory:"cachorro", weight:"10 kg", image:"https://redpet.cl/wp-content/uploads/2024/12/382-HIMALAYA-FOODS-CACHORRO-18KG.png", tags:[] },
+  { id:"p-rg-01", name:"Regal Pet Carne",          brand:"Regal Pet", category:"perros", subcategory:"adulto",   weight:"20 kg", image:"https://zyz.cl/cdn/shop/files/250800.webp?v=1752589754&width=957", tags:[] },
   { id:"p-pg-01", name:"Pedigree Adulto",          brand:"Pedigree",  category:"perros", subcategory:"adulto",   weight:"21 kg", image:"/products/pedigree.jpg", tags:["popular"] },
-  { id:"p-pg-02", name:"Pedigree Adulto Raza Peq.",brand:"Pedigree",  category:"perros", subcategory:"raza-pequeña", weight:"21 kg", image:"/products/pedigree.jpg", tags:[] },
-  { id:"p-pg-03", name:"Pedigree Cachorro",        brand:"Pedigree",  category:"perros", subcategory:"cachorro", weight:"21 kg", image:"/products/pedigree.jpg", tags:[] },
-  { id:"p-pg-04", name:"Pedigree Cachorro",        brand:"Pedigree",  category:"perros", subcategory:"cachorro", weight:"15 kg", image:"/products/pedigree.jpg", tags:[] },
+  { id:"p-pg-02", name:"Pedigree Adulto Raza Peq.",brand:"Pedigree",  category:"perros", subcategory:"raza-pequeña", weight:"21 kg", image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/03/PEDIGREERAZAPEQUENA-1.jpg", tags:[] },
+  { id:"p-pg-03", name:"Pedigree Cachorro",        brand:"Pedigree",  category:"perros", subcategory:"cachorro", weight:"21 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt5AhMN3v_0nT2RYOwLOboe54tA9r5EIAlIj9O_CN4hnTQg7cTPxICiPw&s=10", tags:[] },
+  { id:"p-pg-04", name:"Pedigree Cachorro",        brand:"Pedigree",  category:"perros", subcategory:"cachorro", weight:"15 kg", image:"https://santaisabel.vtexassets.com/arquivos/ids/294614/Alimento-Perro-Cachorro-Pedigree-Carne-Pollo-y-Cereales-15-kg.jpg?v=638240042386070000", tags:[] },
 
   // ─────────────────────────────────────────────
   // GATOS — CAT CHOW
