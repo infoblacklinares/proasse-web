@@ -119,15 +119,15 @@ export const products: Product[] = [
   { id:"p-dc-11", name:"Dog Chow Longevo",                  brand:"Dog Chow", category:"perros", subcategory:"senior",       weight:"8 kg",    image:"https://fullerton.cl/wp-content/uploads/2021/12/Dog-Chow-adultos-7-Longevidad.jpg", tags:[] },
 
   // PERROS — EXCELLENT
-  { id:"p-ex-01", name:"Excellent Fórmula",         brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"15 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-ex-02", name:"Excellent Pollo y Arroz",   brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"15 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-ex-03", name:"Excellent Puppy",           brand:"Excellent", category:"perros", subcategory:"cachorro", weight:"12 kg", image:IMG_PERRO, tags:[] },
-  { id:"p-ex-04", name:"Excellent Sensitive Salmón",brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"12 kg", image:IMG_PERRO, tags:[] },
+  { id:"p-ex-01", name:"Excellent Fórmula",         brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"15 kg", image:"https://petcity.cl/wp-content/uploads/2022/06/excellent-adulto-mantenimiento.jpg", tags:[] },
+  { id:"p-ex-02", name:"Excellent Pollo y Arroz",   brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"15 kg", image:"https://petvet.cl/cdn/shop/files/purina-excellent-perro-adulto-pollo-arroz-15kg-924865.jpg?v=1714234087", tags:[] },
+  { id:"p-ex-03", name:"Excellent Puppy",           brand:"Excellent", category:"perros", subcategory:"cachorro", weight:"12 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPtdmJSK2dDP_VCcSDmF8vo_3vthL0-UwpGfzUlUquNL4Z9vlwPGWKgU8&s=10", tags:[] },
+  { id:"p-ex-04", name:"Excellent Sensitive Salmón",brand:"Excellent", category:"perros", subcategory:"adulto",   weight:"12 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPSq5g-JiuEr3aow1ANQtHaigSnCtsKYkMH0IxKF8CIUiy4hGWhOSDF4-w&s=10", tags:[] },
 
   // PERROS — JOSERA
-  { id:"p-jo-01", name:"Josera Cachorro",   brand:"Josera", category:"perros", subcategory:"cachorro", weight:"18 kg", image:IMG_JOSERA, tags:["premium"] },
-  { id:"p-jo-02", name:"Josera Dog Adulto", brand:"Josera", category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_JOSERA, tags:["premium"] },
-  { id:"p-jo-03", name:"Josera Festival",   brand:"Josera", category:"perros", subcategory:"adulto",   weight:"12 kg", image:IMG_JOSERA, tags:[] },
+  { id:"p-jo-01", name:"Josera Cachorro",   brand:"Josera", category:"perros", subcategory:"cachorro", weight:"18 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLkJjIexkBvpqL-DuuxmeIcbbKXHQcrgQi9fjNBnRPUg&s=10", tags:["premium"] },
+  { id:"p-jo-02", name:"Josera Dog Adulto", brand:"Josera", category:"perros", subcategory:"adulto",   weight:"18 kg", image:"https://petvet.cl/cdn/shop/files/josera-josidog-active-18kg-568393_grande.png?v=1714140822", tags:["premium"] },
+  { id:"p-jo-03", name:"Josera Festival",   brand:"Josera", category:"perros", subcategory:"adulto",   weight:"12 kg", image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/07/765.webp", tags:[] },
 
   // PERROS — OTROS
   { id:"p-ba-01", name:"Bávaro Wok",              brand:"Bávaro",    category:"perros", subcategory:"adulto",   weight:"18 kg", image:IMG_PERRO, tags:[] },

@@ -22,7 +22,8 @@ const nextConfig = {
       { protocol: "https", hostname: "www.labodeguitaonline.cl" },
       { protocol: "https", hostname: "petvet.cl" },
       { protocol: "https", hostname: "puntomascotas.cl" },
-      { protocol: "https", hostname: "zyz.cl" }
+      { protocol: "https", hostname: "zyz.cl" },
+      { protocol: "https", hostname: "petcity.cl" }
     ],
     formats: ["image/avif", "image/webp"]
   }
