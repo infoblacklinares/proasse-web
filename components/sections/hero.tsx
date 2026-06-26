@@ -15,8 +15,7 @@ export function Hero() {
             Alimentos para<br />tu mascota 🐾
           </h1>
           <p className="text-base opacity-90 mb-5 max-w-xs">
-            Compra en tienda o haz tu pedido en línea. Si necesitas delivery,
-            lo tenemos disponible después de las <strong>19:00 hrs</strong> por solo <strong>$600</strong>.
+            Compra en tienda o haz tu pedido en línea. Más de 120 productos para perros y gatos.
           </p>
           <div className="flex flex-wrap gap-3">
             <a

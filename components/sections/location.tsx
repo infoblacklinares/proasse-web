@@ -63,7 +63,7 @@ export function Location() {
         {/* Mapa embebido */}
         <div className="rounded-2xl overflow-hidden shadow-sm border border-line">
           <iframe
-            src="https://maps.google.com/maps?q=Valentín+Letelier+1008,Linares,Chile&output=embed"
+            src="https://maps.google.com/maps?q=Valentin+Letelier+1008,Linares,Maule,Chile&output=embed"
             width="100%"
             height="380"
             style={{ border: 0 }}
