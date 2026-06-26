@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { products, categories, subcategoriesPerro, subcategoriesGato } from "@/lib/data";
 import { ProductCard } from "@/components/ui/product-card";
+import { AnimateIn } from "@/components/ui/animate-in";
 
 export function Catalog() {
   const [cat, setCat] = useState("perros");
@@ -34,12 +35,12 @@ export function Catalog() {
   return (
     <section id="catalogo" className="py-8">
       <div className="max-w-site mx-auto px-[var(--gutter)]">
-        <div className="mb-6">
+        <AnimateIn className="mb-6">
           <h2 className="text-3xl font-extrabold text-ink tracking-tight">Catálogo</h2>
           <p className="text-ink-soft mt-1 text-lg">
             Haz tu pedido en línea o pasa a buscarlo a la tienda
           </p>
-        </div>
+        </AnimateIn>
 
         {/* Buscador */}
         <div className="relative mb-5">
@@ -97,7 +98,11 @@ export function Catalog() {
 
         {/* Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
-          {filtered.map((p) => <ProductCard key={p.id} product={p} />)}
+          {filtered.map((p, i) => (
+            <AnimateIn key={p.id} delay={Math.min(i % 6, 5) * 60}>
+              <ProductCard product={p} />
+            </AnimateIn>
+          ))}
         </div>
 
         {filtered.length === 0 && (
