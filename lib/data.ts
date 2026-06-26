@@ -158,7 +158,7 @@ export const products: Product[] = [
   { id:"g-cc-05", name:"Cat Chow Pescado",  brand:"Cat Chow", category:"gatos", subcategory:"adulto",  weight:"3 kg",    image:"https://santaisabel.vtexassets.com/arquivos/ids/193917/Alimento-gato-adulto-pescado-3-kg.jpg?v=637866709151830000", tags:[] },
 
   // GATOS — CUCHITO
-  { id:"g-co-01", name:"Cuchito Salmón", brand:"Cuchito", category:"gatos", subcategory:"adulto", weight:"20 kg", image:"https://alvicl.vtexassets.com/arquivos/ids/164265/000000000000673982-UN-01.jpg.jpg?v=638796464230100000", tags:[] },
+  { id:"g-co-01", name:"Cuchito Salmón", brand:"Cuchito", category:"gatos", subcategory:"adulto", weight:"20 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOK1YRh-H-1UOwnSBgUXf5hC8VrLh5T5DQ6RcpzxU3iA&s=10", tags:[] },
   { id:"g-co-02", name:"Cuchito Salmón", brand:"Cuchito", category:"gatos", subcategory:"adulto", weight:"8 kg",  image:"https://cdnx.jumpseller.com/distribuidora-mdr/image/64785201/CUCHITO_208KG.jpg?1750622059", tags:[] },
 
   // GATOS — EXCELLENT
@@ -167,8 +167,8 @@ export const products: Product[] = [
 
   // GATOS — FIT / FULL CAT / HIMALAYA / MASKOCAT
   { id:"g-ft-01", name:"Fit Gato",      brand:"Fit",      category:"gatos", subcategory:"adulto", weight:"10 kg", image:"https://www.tusmascotas.cl/wp-content/uploads/2025/01/7800006006715.png", tags:[] },
-  { id:"g-fc-01", name:"Full Cat",      brand:"Full Cat", category:"gatos", subcategory:"adulto", weight:"10 kg", image:"https://veterinariaroco.cl/wp-content/uploads/2025/04/FULLCAT25-1-324x324.png", tags:[] },
-  { id:"g-fc-02", name:"Full Cat",      brand:"Full Cat", category:"gatos", subcategory:"adulto", weight:"25 kg", image:"https://veterinariaroco.cl/wp-content/uploads/2025/04/FULLCAT25-1-324x324.png", tags:[] },
+  { id:"g-fc-01", name:"Full Cat",      brand:"Full Cat", category:"gatos", subcategory:"adulto", weight:"10 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHwJUOKj0Icz0BBxNB6sKHlnmHJpyv9Np_ixnqPHvURg&s=10", tags:[] },
+  { id:"g-fc-02", name:"Full Cat",      brand:"Full Cat", category:"gatos", subcategory:"adulto", weight:"25 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHwJUOKj0Icz0BBxNB6sKHlnmHJpyv9Np_ixnqPHvURg&s=10", tags:[] },
   { id:"g-hm-01", name:"Himalaya Cat",  brand:"Himalaya", category:"gatos", subcategory:"adulto", weight:"10 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQfiQRwFrnEmu5qevn_gu7eggWHog2gFMPCs5am17b5Px9qS9YgsdhAyQ&s=10", tags:[] },
   { id:"g-mk-01", name:"Maskocat",      brand:"Maskocat", category:"gatos", subcategory:"adulto", weight:"25 kg", image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/03/masko-gato.jpg", tags:[] },
   { id:"g-mk-02", name:"Maskocat",      brand:"Maskocat", category:"gatos", subcategory:"adulto", weight:"10 kg", image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/03/masko-gato-1.jpg", tags:[] },
@@ -181,23 +181,23 @@ export const products: Product[] = [
   { id:"g-mc-05", name:"Master Cat Salmón",  brand:"Master Cat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:"https://fullerton.cl/wp-content/uploads/2020/12/M.Cat-20kg_Salmon_resize.jpg", tags:[] },
 
   // GATOS — NOMADE / ONE
-  { id:"g-nm-01", name:"Nomade Gato",              brand:"Nomade", category:"gatos", subcategory:"adulto", weight:"10 kg", image:"https://e-pet.cl/cdn/shop/files/nomade-gato-10-kg_bf8a62a6-3b4f-43f9-8c8b-66a0f133e43a_900x.jpg?v=1731593721", tags:[] },
-  { id:"g-on-01", name:"One Gatito",               brand:"One",    category:"gatos", subcategory:"gatito", weight:"2 kg",  image:"https://i5.walmartimages.cl/asr/9814f1a6-9480-47ba-8b20-9473766f0e25.f2169c078cb34b2ee16e275809212f65.jpeg?null", tags:[] },
+  { id:"g-nm-01", name:"Nomade Gato",              brand:"Nomade", category:"gatos", subcategory:"adulto", weight:"10 kg", image:"https://fullerton.cl/wp-content/uploads/nomade-gatos-1.png", tags:[] },
+  { id:"g-on-01", name:"One Gatito",               brand:"One",    category:"gatos", subcategory:"gatito", weight:"2 kg",  image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQKO6QkhjrIzMHt6DFoBi8Ugm4Mjh-NMhScRxMHrUfg&s=10", tags:[] },
   { id:"g-on-02", name:"One Gato Pollo y Salmón",  brand:"One",    category:"gatos", subcategory:"adulto", weight:"2 kg",  image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSFOQxZgvK5CA6rICD26oTWuNoYbDKC59VGQtPvIY1A&s", tags:[] },
 
   // GATOS — POEMA CAT
   { id:"g-po-01", name:"Poema Cat Esteril Salmón",          brand:"Poema Cat", category:"gatos", subcategory:"esterilizado", weight:"7 kg", image:"https://http2.mlstatic.com/D_NQ_NP_643467-MLC99126262064_112025-O.webp", tags:[] },
-  { id:"g-po-02", name:"Poema Cat Urinary y Esteril Salmón",brand:"Poema Cat", category:"gatos", subcategory:"esterilizado", weight:"7 kg", image:"https://justpets.cl/cdn/shop/files/POEMA-GATOS-URINARIO-7KG-FRONTAL.png?v=1754162430", tags:[] },
+  { id:"g-po-02", name:"Poema Cat Urinary y Esteril Salmón",brand:"Poema Cat", category:"gatos", subcategory:"esterilizado", weight:"7 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG1l3lAfzOKPTO7lQef8Ke29gcKtf9udIagjUh4SjzYw&s", tags:[] },
 
   // GATOS — PRO PLAN CAT
   { id:"g-pp-01", name:"Pro Plan Cat Adulto",             brand:"Pro Plan", category:"gatos", subcategory:"adulto",       weight:"7.5 kg", image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/03/PROPLAN-CAT-ADULT-75KG.jpg", tags:["premium"] },
-  { id:"g-pp-02", name:"Pro Plan Cat Kitten",             brand:"Pro Plan", category:"gatos", subcategory:"gatito",       weight:"7.5 kg", image:"https://www.novapet.cl/cdn/shop/files/1_d33aa6e6-9959-4113-8d0d-0b0670f49b14.png?v=1749225638&width=640", tags:[] },
+  { id:"g-pp-02", name:"Pro Plan Cat Kitten",             brand:"Pro Plan", category:"gatos", subcategory:"gatito",       weight:"7.5 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogOSBKlS9ta6H5ItKOOgwN7xNNPj5st2SfBsdjJjniQ&s=10", tags:[] },
   { id:"g-pp-03", name:"Pro Plan Cat Kitten",             brand:"Pro Plan", category:"gatos", subcategory:"gatito",       weight:"1 kg",   image:"https://www.tusmascotas.cl/wp-content/uploads/2020/10/Pro-Plan-Kitten.jpg", tags:[] },
   { id:"g-pp-04", name:"Pro Plan Cat Esterilizado Salmón",brand:"Pro Plan", category:"gatos", subcategory:"esterilizado", weight:"7.5 kg", image:"https://www.clubdeperrosygatos.cl/wp-content/uploads/2019/02/PROPLAN-STERILIZED-CAT-7.webp", tags:[] },
   { id:"g-pp-05", name:"Pro Plan Cat Urinary Pollo",      brand:"Pro Plan", category:"gatos", subcategory:"esterilizado", weight:"7.5 kg", image:"https://www.distribuidoralira.cl/wp-content/uploads/2025/03/PROPLAN-CAT-URINARY-75KG.jpg", tags:[] },
 
   // GATOS — ROYAL CANIN
-  { id:"g-rc-01", name:"Royal Canin Cat Urinary S/O", brand:"Royal Canin", category:"gatos", subcategory:"esterilizado", weight:"1.5 kg", image:"https://amigales.cl/cdn/shop/files/royal_urinary_so_gatos_1.jpg?v=1771878849", tags:["premium"] },
+  { id:"g-rc-01", name:"Royal Canin Cat Urinary S/O", brand:"Royal Canin", category:"gatos", subcategory:"esterilizado", weight:"1.5 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_cOtzPu9zEfMUKh4pSpxfYn1GOo40H7gFTQXcyywSoA&s", tags:["premium"] },
 
   // GATOS — SABROCAT
   { id:"g-sc-01", name:"Sabrocat Pollo", brand:"Sabrocat", category:"gatos", subcategory:"adulto", weight:"20 kg", image:"https://cdnx.jumpseller.com/distribuidora-mdr/image/45857356/SABROCAT_pollo_20KG.jpg?1708902168", tags:[] },
@@ -211,7 +211,7 @@ export const products: Product[] = [
 
   // GATOS — 9LIVES
   { id:"g-lv-01", name:"9lives Adulto Carne",        brand:"9lives", category:"gatos", subcategory:"adulto", weight:"15 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToXC7JNH4iA5-GZI0Ji6yFopjJRtS_itR8oISpiiTEBdFPxLPUc-kDzxc&s=10", tags:[] },
-  { id:"g-lv-02", name:"9lives Adulto Salmón y Atún",brand:"9lives", category:"gatos", subcategory:"adulto", weight:"15 kg", image:"https://shop.badu.cl/wp-content/uploads/2025/05/IMG_66e0665ae02131.54547197.png", tags:[] },
+  { id:"g-lv-02", name:"9lives Adulto Salmón y Atún",brand:"9lives", category:"gatos", subcategory:"adulto", weight:"15 kg", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_agqwotdAunrBB5gWkyc9dvW5JBaCYyFAIkPiv3GaIg&s=10", tags:[] },
 
   // GATOS — TRIGONO / WHISKAS / CHAMPION CAT
   { id:"g-tr-01", name:"Trigono Gato",           brand:"Trigono",      category:"gatos", subcategory:"adulto", weight:"10 kg", image:"https://dojiw2m9tvv09.cloudfront.net/10212/product/trigonogato10kg6783.jpg", tags:[] },
