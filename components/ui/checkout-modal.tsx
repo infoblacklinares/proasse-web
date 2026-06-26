@@ -12,7 +12,7 @@ export function CheckoutModal({ onClose }: Props) {
   const [address, setAddress] = useState("");
   const [wantsDelivery, setWantsDelivery] = useState(false);
 
-  const ready = name.trim().length > 0 && address.trim().length > 0;
+  const ready = name.trim().length > 0 && (!wantsDelivery || address.trim().length > 0);
 
   const waUrl = useMemo(() => {
     if (!ready) return "#";
@@ -41,16 +41,7 @@ export function CheckoutModal({ onClose }: Props) {
             />
           </div>
 
-          <div>
-            <label className="block text-base font-semibold text-ink mb-1">Tu dirección *</label>
-            <input
-              type="text" value={address} onChange={(e) => setAddress(e.target.value)}
-              placeholder="Ej: Valentín Letelier 500, Linares"
-              className="w-full px-4 py-4 rounded-2xl border-2 border-line bg-bg text-ink text-lg placeholder:text-ink-soft/50 focus:outline-none focus:border-accent"
-            />
-          </div>
-
-          {/* Delivery checkbox */}
+          {/* Delivery toggle */}
           <button
             type="button"
             onClick={() => setWantsDelivery(!wantsDelivery)}
@@ -70,6 +61,17 @@ export function CheckoutModal({ onClose }: Props) {
               </div>
             </div>
           </button>
+
+          {wantsDelivery && (
+            <div>
+              <label className="block text-base font-semibold text-ink mb-1">Tu dirección *</label>
+              <input
+                type="text" value={address} onChange={(e) => setAddress(e.target.value)}
+                placeholder="Ej: Valentín Letelier 500, Linares"
+                className="w-full px-4 py-4 rounded-2xl border-2 border-line bg-bg text-ink text-lg placeholder:text-ink-soft/50 focus:outline-none focus:border-accent"
+              />
+            </div>
+          )}
         </div>
 
         <p className="text-sm text-ink-soft bg-bg-2 rounded-xl px-4 py-3">
