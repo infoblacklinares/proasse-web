@@ -55,7 +55,7 @@ export function CartDrawer() {
         {state.items.length > 0 && (
           <div className="px-5 py-5 border-t border-line space-y-3">
             <p className="text-base text-ink-soft text-center">
-              {totalItems} {totalItems === 1 ? "producto" : "productos"} seleccionados
+              {totalItems} {totalItems === 1 ? "producto seleccionado" : "productos seleccionados"}
             </p>
             <p className="text-sm text-ink-soft bg-amber-50 border border-amber-200 rounded-xl px-3 py-2">
               💬 Proasse confirmará precios y stock por WhatsApp
