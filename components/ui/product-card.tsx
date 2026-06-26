@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useCart } from "@/lib/cart-context";
+import { whatsappUrl } from "@/lib/whatsapp";
 import { Product } from "@/lib/data";
 
 export function ProductCard({ product }: { product: Product }) {
@@ -36,6 +37,14 @@ export function ProductCard({ product }: { product: Product }) {
         <p className="text-xs text-ink-soft font-semibold uppercase tracking-wide">{product.brand}</p>
         <h3 className="font-bold text-ink text-sm leading-tight flex-1">{product.name}</h3>
         <p className="text-sm font-semibold text-accent">{product.weight}</p>
+        <a
+          href={whatsappUrl(`${product.name} ${product.weight}`)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-ink-soft hover:text-accent transition-colors"
+        >
+          💬 Consultar precio
+        </a>
 
         {/* Botón */}
         <div className="mt-2">
