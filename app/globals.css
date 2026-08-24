@@ -168,3 +168,32 @@
 .brand-sabrokan  { background: linear-gradient(145deg, #f97316 0%, #ea580c 60%, #c2410c 100%); }
 .brand-montanes  { background: linear-gradient(145deg, #4ade80 0%, #16a34a 55%, #14532d 100%); }
 .brand-champion  { background: linear-gradient(145deg, #60a5fa 0%, #2563eb 55%, #1e3a8a 100%); }
+
+/* =========================================================
+   EL ESTRATEGA — base de la sección /estratega
+   Aislado del sitio Proasse: sólo aplica dentro de .estratega-app
+   ========================================================= */
+body:has(.estratega-app) {
+  background: #dfe3e8;
+  font-size: 16px;
+}
+
+.estratega-app {
+  line-height: 1.5;
+}
+
+.estratega-app ::selection {
+  background: #e90069;
+  color: #fff;
+}
+
+/* Respeta a quien pide menos movimiento en el sistema operativo */
+@media (prefers-reduced-motion: reduce) {
+  .estratega-app *,
+  .estratega-app *::before,
+  .estratega-app *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -28,10 +28,26 @@ const config: Config = {
         whatsapp: {
           DEFAULT: "#25D366",
           hover: "#1ebe5b"
+        },
+        // Tokens de marca El Estratega — azul editorial + magenta
+        est: {
+          navy: "#071A35",
+          "navy-2": "#0D294E",
+          "navy-3": "#123763",
+          pink: "#E90069",
+          "pink-2": "#FF2B87",
+          bg: "#F4F5F7",
+          paper: "#FFFFFF",
+          ink: "#101828",
+          muted: "#667085",
+          line: "#E5E7EB"
         }
       },
       fontFamily: {
         sans: ["var(--font-bricolage)", "system-ui", "sans-serif"],
+        // El Estratega usa su propio par tipográfico
+        "est-sans": ["var(--font-est-sans)", "system-ui", "sans-serif"],
+        "est-serif": ["var(--font-est-serif)", "Georgia", "serif"]
       },
       borderRadius: {
         DEFAULT: "16px",
@@ -64,6 +80,10 @@ const config: Config = {
           "0%, 100%": { transform: "translate(0, 0) scale(1)" },
           "50%": { transform: "translate(2%, -2%) scale(1.02)" }
         },
+        tickerScroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" }
+        },
         scrollLine: {
           "0%, 100%": { transform: "scaleY(0.3)", transformOrigin: "top" },
           "50%": { transform: "scaleY(1)", transformOrigin: "top" }
@@ -75,7 +95,8 @@ const config: Config = {
         ping: "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
         "float-product": "floatProduct 8s ease-in-out infinite",
         "float-circle": "floatCircle 12s ease-in-out infinite",
-        "scroll-line": "scrollLine 2s infinite ease-in-out"
+        "scroll-line": "scrollLine 2s infinite ease-in-out",
+        "ticker": "tickerScroll 28s linear infinite"
       }
     }
   },
